@@ -17,7 +17,7 @@ Additional features will include the following:
 6.  Users can sign up to receive email updates. 
 
 ## User Stories
-
+[user stories](https://trello.com/b/YzkaM1vF/star-wars-a-guide-to-the-galaxy)
 
 ## Wireframes
 
