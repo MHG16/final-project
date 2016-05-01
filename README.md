@@ -23,13 +23,13 @@ Home
 ![home](./wireframes/home.png)
 Sign-in / Register
 ![sign in/register](./wireframes/sign_in_register.png)
-
+Galaxy View
 ![galaxy view](./wireframes/galaxy_view.png)
-
+Planet View
 ![planet view](./wireframes/planet_view.png)
-
+Blog
 ![blog](./wireframes/blog.png)
-
+Application Flow
 ![application flow](./application_flow.png)
 
 ## Models
