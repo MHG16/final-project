@@ -29,5 +29,12 @@ Additional features will include the following:
 
 [star wars api](http://swapi.co)
 
+[wikia api](http://api.wikia.com/wiki/Wikia_API_Wiki) 
+This is for connecting to the Star Wars wiki: 
+[star wars wiki](http://starwars.wikia.com/wiki/Main_Page)
+
+
+
+
 
 
