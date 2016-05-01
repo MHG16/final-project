@@ -20,9 +20,10 @@ Additional features will include the following:
 
 ## Wireframes
 
+[application flow](./application_flow)
 
 ## Models
-![user model](./user-model.png) 
+![user model](./user_model.png) 
 
 ## APIs, Plugins, Libraries and Frameworks  
 
