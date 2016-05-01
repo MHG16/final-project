@@ -20,11 +20,14 @@ Additional features will include the following:
 
 ## Wireframes
 
-![application flow](./application_flow)
+![application flow](./application_flow.png)
 
 ## Models
 ![user model](./user_model.png) 
 
 ## APIs, Plugins, Libraries and Frameworks  
+
+[star wars api](http://swapi.co)
+
 
 
