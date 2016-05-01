@@ -22,7 +22,7 @@ Additional features will include the following:
 
 
 ## Models
-
+![user model](./user-model.png) 
 
 ## APIs, Plugins, Libraries and Frameworks  
 
