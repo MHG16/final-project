@@ -19,16 +19,16 @@ Additional features will include the following:
 [user stories](https://trello.com/b/YzkaM1vF/star-wars-a-guide-to-the-galaxy)
 
 ## Wireframes
-
+Home
 ![home](./wireframes/home.png)
-
+Sign-in / Register
 ![sign in/register](./wireframes/sign_in_register.png)
 
 ![galaxy view](./wireframes/galaxy_view.png)
 
 ![planet view](./wireframes/planet_view.png)
 
-![blog](./wireframes/blog)
+![blog](./wireframes/blog.png)
 
 ![application flow](./application_flow.png)
 
