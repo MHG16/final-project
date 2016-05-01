@@ -20,21 +20,33 @@ Additional features will include the following:
 
 ## Wireframes
 
-![application flow](./application_flow.png)
+![home](./wireframes/home.png)
+
+![sign in/register](../wireframes/sign_in_register.png)
+
+![galaxy view](../wireframes/galaxy_view.png)
+
+![planet view](../wireframes/planet_view.png)
+
+![blog](../wireframes/blog)
+
+![application flow](../application_flow.png)
 
 ## Models
 ![user model](./user_model.png) 
 
 ## APIs, Plugins, Libraries and Frameworks  
-#APIs
+APIs:
 [star wars api](http://swapi.co)
 
 [wikia api](http://api.wikia.com/wiki/Wikia_API_Wiki) 
 This is for connecting to the Star Wars wiki: 
 [star wars wiki](http://starwars.wikia.com/wiki/Main_Page)
 
-#Front end Framework
+Front end Framework:
 React  
+
+
 
 ## How to reach me
 email: mhgrossmann@yahoo.com
