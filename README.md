@@ -22,15 +22,15 @@ Additional features will include the following:
 
 ![home](./wireframes/home.png)
 
-![sign in/register](../wireframes/sign_in_register.png)
+![sign in/register](./wireframes/sign_in_register.png)
 
-![galaxy view](../wireframes/galaxy_view.png)
+![galaxy view](./wireframes/galaxy_view.png)
 
-![planet view](../wireframes/planet_view.png)
+![planet view](./wireframes/planet_view.png)
 
-![blog](../wireframes/blog)
+![blog](./wireframes/blog)
 
-![application flow](../application_flow.png)
+![application flow](./application_flow.png)
 
 ## Models
 ![user model](./user_model.png) 
