@@ -33,7 +33,9 @@ Application Flow
 ![application flow](./application_flow.png)
 
 ## Models
-![user model](./user_model.png) 
+![user model](./user_model.png)
+
+![properties](./properties.png)
 
 ## APIs, Plugins, Libraries and Frameworks  
 APIs:
