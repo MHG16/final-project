@@ -11,10 +11,9 @@ Additional features will include the following:
 
 1.  A view of the galaxy where the user can click on a planet to open the appropriate entry.
 2.  A blog where citizens will be able to describe their own visits to the planets.  This will be fan fiction.
-3.  A registration system where the user can identify as a member of the empire or the rebellion when they log in.  This will result in the interface theme changing to appropriate colors and logos.  Only registered users can submit blog entries.   
+3.  A registration system where the user can identify as a member of the empire or the rebellion when they log in.  This will result in the interface theme changing to appropriate colors and logos.  Also, only registered users can submit blog entries.   
 4.  An area where users can suggest future upgrades to to the system, including additional planet entries.  
-5.  The ability of users to rate their visits to locales.
-6.  Users can sign up to receive email updates. 
+5.  Users can sign up to receive email updates. 
 
 ## User Stories
 [user stories](https://trello.com/b/YzkaM1vF/star-wars-a-guide-to-the-galaxy)
