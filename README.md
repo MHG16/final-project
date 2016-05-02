@@ -47,9 +47,11 @@ This is for connecting to the Star Wars wiki:
 
 Front end Framework:
 React  
-Perk 
-Skeleton 
 
+Perk
+
+Skeleton
+ 
 ## How to reach me
 email: mhgrossmann@yahoo.com
 
