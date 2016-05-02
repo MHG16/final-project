@@ -1,54 +1,62 @@
-# Perk Framework
 
-## Build Node Web Apps with Ease
+# Star Wars: A Guide to the Galaxy
 
-Perk is a sturdy node framework that gets out of your way, built on top of the best existing libraries out there. This framework is for developers who value simplicity and are looking for a solid set of tools to build sophisticated web applications.
 
-### [Getting Started](http://perkframework.com/guides/getting-started-os-x.html)
+## Description
+I love Star Wars and who wouldnt love to travel to the exotic planets of that galaxy?  Being a huge Star Wars fan, I want to share my love of all things Star Wars with other fans.  I'm creating a travel guide for the citizens of that galaxy a long time ago and far, far away.    
 
-Learn how to get up and running with Perk.
+First and formemost, my application will focus on the planets of the original trilogy of films.  Each planetary entry will include a picture of the planet and the conditions there.   Also, notable historical events, indigenous creatures and famous citizens from those planets will be included with information on each.  Some of the most notable events will include videos.   Finally, each planet will be designated as allied with the Empire, Rebellion or neutral for the safety of the visitor.        
 
-### [Documentation](http://perkframework.com/api/index.html)
+Additional features will include the following:
 
-Detailed description of the ins and outs of the framework.
+1.  A view of the galaxy where the user can click on a planet to open the appropriate entry.
+2.  A blog where citizens will be able to describe their own visits to the planets.  This will be fan fiction.
+3.  A registration system where the user can identify as a member of the empire or the rebellion when they log in.  This will result in the interface theme changing to appropriate colors and logos.  Also, only registered users can submit blog entries.   
+4.  An area where users can suggest future upgrades to to the system, including additional planet entries.  
+5.  Users can sign up to receive email updates. 
 
-### [Guides](http://perkframework.com/guides/index.html)
+## User Stories
+[user stories](https://trello.com/b/YzkaM1vF/star-wars-a-guide-to-the-galaxy)
 
-Need to build and API server? Set up user authentication or OAuth? This is the place to go for step by step guides.
+## Wireframes
+Home
+![home](./wireframes/home.png)
+Sign-in / Register
+![sign in/register](./wireframes/sign_in_register.png)
+Galaxy View
+![galaxy view](./wireframes/galaxy_view.png)
+Planet View
+![planet view](./wireframes/planet_view.png)
+Blog
+![blog](./wireframes/blog.png)
+Application Flow
+![application flow](./application_flow.png)
 
-<!--
-1. Routing (express)
-1. Flash Messages / errors
-1. Database connection and ORM (knex and bookshelf)
-1. User registration and authentication (passport and custom adapters)
-1. Configuration [config-loader](https://github.com/alarner/config-loader)
-1. Nice gulp, babel, react configuration
+## Models
+![user model](./user_model.png)
 
-### Tools
+![properties](./properties.png)
 
-* express
-* react
-* gulp
-* sass
-* browserify
-* babel
-* knex
-* bookshelf
-* passport
+## APIs, Plugins, Libraries and Frameworks  
+APIs:
+[star wars api](http://swapi.co)
 
-### To use...
+[wikia api](http://api.wikia.com/wiki/Documentation) 
+This is for connecting to the Star Wars wiki: 
+[star wars wiki](http://starwars.wikia.com/wiki/Main_Page)
 
-1. Download / fork / clone
-1. Run `npm install -g gulp knex` to install global dependencies
-1. Run `npm install` to install local dependencies
-1. Run `gulp` to start the server
+Front end Framework:
+React  
 
-### Todo
+Perk
 
-1. Local user login
-1. Password reset
-1. More oauth providers (facebook, twitter, amazon, github, bitbucket, dropbox, instagram, linkedin, slack, windows live, etc.)
-1. Hierarchical user permissioning system
-1. OAuth / API server
-1. CSRF protection
--->
+Skeleton
+ 
+## How to reach me
+email: mhgrossmann@yahoo.com
+
+
+
+
+
+
