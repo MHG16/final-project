@@ -31,7 +31,7 @@ Application Flow
 
 
 ## Models
-
+![models](./model-diagrams/data_models.png)
 
 
 
