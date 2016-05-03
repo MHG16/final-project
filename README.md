@@ -27,7 +27,7 @@ Planet View w/ Blog
 
 
 ## Models
-![models](./model-diagrams/data_models.png)
+![models](./model-diagrams/data_model.png)
 
 
 ## APIs, Plugins, Libraries and Frameworks  
