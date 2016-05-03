@@ -28,19 +28,18 @@ Planet View w/ Blog
 ![planet view](./wireframes/Planet View w Blog.png)
 
 Application Flow
-![application flow](./application_flow.png)
+
 
 ## Models
-![user model](./user_model.png)
 
-![properties](./properties.png)
+
+
 
 ## APIs, Plugins, Libraries and Frameworks  
 APIs:
 [star wars api](http://swapi.co)
 
-[wikia api](http://api.wikia.com/wiki/Documentation) 
-This is for connecting to the Star Wars wiki: 
+This is for the planet images:  
 [star wars wiki](http://starwars.wikia.com/wiki/Main_Page)
 
 Front end Framework:
@@ -49,6 +48,9 @@ React
 Perk
 
 Skeleton
+
+Back end Framework: 
+Node
  
 ## How to reach me
 email: mhgrossmann@yahoo.com
