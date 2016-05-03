@@ -25,12 +25,9 @@ Sign-in / Register
 Planet View w/ Blog
 ![planet view](./wireframes/Planet View w Blog.png)
 
-Application Flow
-
 
 ## Models
 ![models](./model-diagrams/data_models.png)
-
 
 
 ## APIs, Plugins, Libraries and Frameworks  
@@ -38,6 +35,7 @@ APIs:
 [star wars api](http://swapi.co)
 
 This is for the planet images:  
+
 [star wars wiki](http://starwars.wikia.com/wiki/Main_Page)
 
 Front end Framework:
