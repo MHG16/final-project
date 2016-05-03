@@ -21,11 +21,11 @@ Additional features will include the following:
 ## Wireframes
 
 Home Page / Galaxy View
-![galaxy view](./wireframes/galaxy_view.png)
+![galaxy view](./wireframes/Home - Galaxy View.png)
 Sign-in / Register
-![sign in/register](./wireframes/sign_in_register.png)
+![sign in/register](./wireframes/Sign in - Register.png)
 Planet View w/ Blog
-![planet view](./wireframes/planet_view.png)
+![planet view](./wireframes/Planet View w Blog.png)
 
 Application Flow
 ![application flow](./application_flow.png)
