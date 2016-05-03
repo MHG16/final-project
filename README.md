@@ -41,6 +41,7 @@ This is for the planet images:
 [star wars wiki](http://starwars.wikia.com/wiki/Main_Page)
 
 Front end Framework:
+
 React  
 
 Perk
@@ -48,8 +49,11 @@ Perk
 Skeleton
 
 Back end Framework: 
+
 Node
- 
+
+Bookshelf 
+
 ## How to reach me
 email: mhgrossmann@yahoo.com
 
