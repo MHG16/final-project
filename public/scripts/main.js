@@ -3,7 +3,7 @@ import Backbone from 'backbone';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import planetcollection from './collections/PlanetCollection';
-import planetModel from './models/PlanetModel'
+import planetmodel from './models/PlanetModel';
 
 const Planet = React.createClass ({
 	getInitialState: function(){
@@ -20,18 +20,18 @@ const Planet = React.createClass ({
 	
 	},
 
-
-
 	
 	render: function(){
-		
-		return (
-			<section>
-		{/*need to map over a model here in order to get what we are looking for*/}
-				<h1>{this.state.planetcollection.get('name')}</h1>
-			}
-			</section>
-			);
+			let planets = this.state.planetcollection.map(
+				function(value, index, array) {
+					return <planetmodel name={value.get('name')} />;
+				});
+
+			return (
+				<section>
+					{planets}
+				</section>
+				);
 
 	}	
 });
