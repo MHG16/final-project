@@ -1,44 +1,35 @@
 import $ from 'jquery';
 import Backbone from 'backbone';
-import {sync, errorHandler} from './ajax';
-Backbone.sync = sync;
-$.ajaxSetup({
-	headers: {
-		Accept: 'application/json'
-	},
-	beforeSend: function(xhr) {
-		let error = this.error;
-		if(error) {
-			this.error = function(xhr) {
-				errorHandler(xhr, error);
-			};
-		}
-	}
-});
-
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Model from './../../PlanetModel';
-
+import planetcollection from './collections/PlanetCollection';
+import planetModel from './models/PlanetModel'
 
 const Planet = React.createClass ({
 	getInitialState: function(){
 		console.log('getInitialState');
-		return{Planets: new Model};
+		return{planetcollection: planetcollection};
 	},
 	componentDidMount: function(){
 		console.log('I mounted Planet!');
-		this.state.Planets.fetch();
-		this.state.Planets.on('change', (updatedPlanets) => {
-			this.setState({Planets: updatedPlanets});
+		this.state.planetcollection.fetch();
+		this.state.planetcollection.on('update', () => {
+			this.setState({planetcollection: planetcollection});
+			console.log('testing');
 		});
 	
 	},
+
+
+
 	
 	render: function(){
+		
 		return (
 			<section>
-				<h1>{this.state.story.get('name')}</h1>
+		{/*need to map over a model here in order to get what we are looking for*/}
+				<h1>{this.state.planetcollection.get('name')}</h1>
+			}
 			</section>
 			);
 
