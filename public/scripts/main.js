@@ -18,14 +18,37 @@ $.ajaxSetup({
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import PlanetModel from '';
-// import {Router, Route, browserHistory, IndexRoute} from 'react-router';
-// import App from './components/App';
+import PlanetModel from './../../PlanetModel';
 
 
+const Planet = React.createClass ({
+	getInitialState: function(){
+		console.log('getInitialState');
+		return{Planets: Planets};
+	},
+	componentDidMount: function(){
+		console.log('I mounted Planet!');
+		Planets.fetch();
+		Planets.on('update', this.updatePlanets);
+		Planets.fetch();
+	},
+	// componentWillUnmount: function() {
+	// 	Stories.off('update', this.updateStories);
+	//},
+	updatePlanets: function() {
+		this.setState({Planets: Planets});
+	},
+	render: function(){
+		return (
+			<section>
+				<h1>{this.state.story.get('name')}</h1>
+			</section>
+			);
 
+	}	
+});
 
-
+ReactDOM.render(<Planet />, document.querySelector('.app'));
 
 
 
