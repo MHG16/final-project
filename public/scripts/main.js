@@ -18,26 +18,23 @@ $.ajaxSetup({
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import PlanetModel from './../../PlanetModel';
+import Model from './../../PlanetModel';
 
 
 const Planet = React.createClass ({
 	getInitialState: function(){
 		console.log('getInitialState');
-		return{Planets: Planets};
+		return{Planets: new Model};
 	},
 	componentDidMount: function(){
 		console.log('I mounted Planet!');
-		Planets.fetch();
-		Planets.on('update', this.updatePlanets);
-		Planets.fetch();
+		this.state.Planets.fetch();
+		this.state.Planets.on('change', (updatedPlanets) => {
+			this.setState({Planets: updatedPlanets});
+		});
+	
 	},
-	// componentWillUnmount: function() {
-	// 	Stories.off('update', this.updateStories);
-	//},
-	updatePlanets: function() {
-		this.setState({Planets: Planets});
-	},
+	
 	render: function(){
 		return (
 			<section>
