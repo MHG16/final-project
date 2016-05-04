@@ -17,7 +17,7 @@ exports.up = function(knex, Promise) {
 		t.integer('userId')
 			.unsigned()
 			.notNull()
-			.referenes('id')
+			.references('id')
 			.inTable('users')
 			.onDelete('CASCADE');
 
