@@ -1,6 +1,6 @@
 
 exports.up = function(knex, Promise) {
-	return knex.schema.createTable('users', function(t) {
+	return knex.schema.createTable('planets', function(t) {
   		t.increments('id').unsigned().primary();
 		t.dateTime('createdAt').notNull();
 		t.dateTime('updatedAt').nullable();
@@ -13,5 +13,5 @@ exports.up = function(knex, Promise) {
 };
 
 exports.down = function(knex, Promise) {
-  
+  	return knex.schema.dropTable('planets');
 };
