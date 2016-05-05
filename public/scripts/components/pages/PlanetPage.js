@@ -12,14 +12,6 @@ export default React.createClass({
 });
 
 
-
-
-
-
-
-
-
-
 // import React from 'react';
 // import planetcollection from './collections/PlanetCollection';
 // import Planet from './Planet.js';
@@ -54,3 +46,12 @@ export default React.createClass({
 // 				});
 // 	}	
 // });
+
+
+
+
+
+
+
+
+
