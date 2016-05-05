@@ -72,12 +72,14 @@
     "pg": "^4.5.1",
     "progress": "^1.1.8",
     "pushpin": "git+https://github.com/alarner/pushpin.git",
+    "rayon": "^1.1.2",
     "react": "^0.14.7",
     "react-dom": "^0.14.7",
     "react-router": "^2.4.0",
     "request": "^2.69.0",
     "serve-favicon": "~2.3.0",
     "simple-ssh": "^0.8.9",
+    "skeleton-scss": "^2.0.4",
     "underscore": "^1.8.3",
     "validator": "^5.1.0"
   }
