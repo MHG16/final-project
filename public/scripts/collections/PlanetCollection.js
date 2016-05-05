@@ -10,15 +10,29 @@ const PlanetCollection = Backbone.Collection.extend({
 
 	//we are redefining fetch here as the data needed is in the results 
 	fetch: function() {
-		$.ajax({
-			type: 'GET',
-			url: this.url,
-			success: (data) => {
-				this.reset(data.results);
-				//here we are triggering an update so that the component is re-rendered
-				this.trigger('update');
-			}
+
+		const ids = [1, 4, 7, 8, 15, 23];
+
+		let models = ids.map(id => {
+			let model = new PlanetModel({id: id});
+			model.fetch();
+			return model;
 		});
+
+		this.reset([]);
+		this.add(models);
+
+
+	
+		// $.ajax({
+		// 	type: 'GET',
+		// 	url: this.url,
+		// 	success: (data) => {
+		// 		this.reset(data.results);
+		// 		//here we are triggering an update so that the component is re-rendered
+		// 		this.trigger('update');
+		// 	}
+		// });
 	}
 });
 

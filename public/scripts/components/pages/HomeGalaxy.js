@@ -11,11 +11,11 @@ export default React.createClass({
 	},
 	componentDidMount: function(){
 		console.log('I mounted Planet!');
-		this.state.planetcollection.fetch();
-		this.state.planetcollection.on('update', () => {
+		this.state.planetcollection.on('change update', () => {
 			this.setState({planetcollection: planetcollection});
 			console.log('testing');
 		});
+		this.state.planetcollection.fetch();
 	
 	},
 
