@@ -1,3 +1,25 @@
+import React from 'react';
+
+
+export default React.createClass({
+	render: function() {
+		return (
+			<section>
+				<h1>This is my Planet Page</h1>
+			</section>
+		);
+	}
+});
+
+
+
+
+
+
+
+
+
+
 // import React from 'react';
 // import planetcollection from './collections/PlanetCollection';
 // import Planet from './Planet.js';
