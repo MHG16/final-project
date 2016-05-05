@@ -11,7 +11,7 @@ const PlanetCollection = Backbone.Collection.extend({
 	//we are redefining fetch here as the data needed is in the results 
 	fetch: function() {
 
-		const ids = [1, 4, 7, 8, 15, 23];
+		const ids = [1, 2, 3, 4, 5, 6, 7];
 
 		let models = ids.map(id => {
 			let model = new PlanetModel({id: id});
