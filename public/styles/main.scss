@@ -1,3 +1,14 @@
-.blue {
-	background: green;
+// .blue {
+// 	background: green;
+// }
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+img {
+  position: absolute;
+  width: 120%;
+  left: -10%;
 }

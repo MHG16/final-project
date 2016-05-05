@@ -29,6 +29,7 @@ export default React.createClass({
 
 			return(
 				<section>
+					<img src="/images/galaxy.jpg"/>
 					{planets}
 				</section>
 				);
