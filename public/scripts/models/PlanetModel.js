@@ -3,7 +3,7 @@ import Backbone from 'backbone';
 export default Backbone.Model.extend({
 	defaults:{
 		name:'',
-		cliamate:'',
+		climate:'',
 		diameter:'',
 		population:'',
 		createdAt: null,
