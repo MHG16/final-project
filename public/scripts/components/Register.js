@@ -1,7 +1,6 @@
 import React from 'react';
 import $ from 'jquery';
 import {hashHistory} from 'react-router';
-import Navigation from './Navigation';
 import user from '../models/user';
 
 export default React.createClass({
@@ -16,7 +15,6 @@ export default React.createClass({
 		console.log('render');
 		return (
 			<section>
-				<Navigation />
 				<h1>Register</h1>
 				<form onSubmit={this.register}>
 					<input type="text" placeholder="first name" ref="firstName"/>

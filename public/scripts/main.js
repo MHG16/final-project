@@ -9,13 +9,6 @@ import HomeGalaxy from './components/pages/HomeGalaxy';
 import PlanetPage from './components/pages/PlanetPage';
 
 
-// function requireAuth(nextState, replace) {
-// 	  if (!user.get('id')) {
-// 	    replace({
-// 	      pathname: '/login'
-// 	    });
-// 	}
-// }
 
 const router = (
 	<Router history={browserHistory}>
