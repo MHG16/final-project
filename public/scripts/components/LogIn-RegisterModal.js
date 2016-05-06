@@ -15,33 +15,6 @@ export default React.createClass({
 		};
 	},
 
-	createUser: function(e) {
-	e.preventDefault();
-	$.ajax({
-		url: '/auth/register',
-		type: 'POST',
-		data: {
-			
-			firstName: this.refs.first.value,
-			lastName: this.refs.last.value, 
-			email: this.refs.email.value,
-			password: this.refs.password.value
-		},
-
-		success: (loggedArg) => {			
-			this.state.user.set(loggedArg);
-			this.setState({
-            	modalVisible: true
-        	});	
-		},
-
-		error: (errorArg) => {
-				this.setState({errors: errorArg.responseJSON});
-
-			}
-		});
-	},
-
     closeModal: function() {
         this.setState({
             modalVisible: false
