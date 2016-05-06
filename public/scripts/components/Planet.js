@@ -5,7 +5,7 @@ export default React.createClass({
 	render: function() {
 		return (
 				<section>
-					<h1>{this.props.name}</h1>
+					<button type="submit">{this.props.name}</button>
 				</section>
 				);
 	}
