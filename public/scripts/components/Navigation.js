@@ -3,14 +3,16 @@ import {Link} from 'react-router';
 import $ from 'jquery';
 import user from '../models/User.js';
 import {browserHistory} from 'react-router';
+import LoginRegisterModal from './Login-RegisterModal.js';
 
 export default React.createClass({
-	getInitialstate: function() {
+	getInitialState: function() {
 		console.log('Navigation getInitialstate');
-		return (
-			{user: user}
-
-			);
+		return {
+			user: user,
+			modalVisible: false
+		};
+			
 	},
 
 	componentDidMount: function() {
@@ -22,13 +24,30 @@ export default React.createClass({
 		});
 	},
 
+	openModal: function(e) {
+		e.preventDefault();
+		this.setState({
+			modalVisible: true
+		});
+	},
+
+
+	closeModal: function() {
+		console.log('Im in closeModal');
+        this.setState({
+            modalVisible: false
+        });
+    },
+
 	render: function () {
 
 //if user is logged in should only see links to logout and home 
 //if user is logged out should see links to sign-in/register and home  
 		if(!this.state.user.get('id')) {
+			console.log(this.state.modalVisible);
 			return (<nav>
-			<a href="#" className="nav-links">Login/Register</a>
+			<LoginRegisterModal modalVisible={this.state.modalVisible} closeModal={this.closeModal}/>
+			<a href="#" className="nav-links" onClick={this.openModal}>Login/Register</a>
 			<a href="#" className="nav-links">Home</a>
 			</nav>);
 		} else {

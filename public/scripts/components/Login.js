@@ -1,7 +1,7 @@
 import React from 'react';
 import $ from 'jquery';
 import {browserHistory} from 'react-router';
-import user from '../../models/user';
+import user from '../models/user';
 
 
 export default React.createClass({
