@@ -22,14 +22,17 @@ export default React.createClass({
 	render: function(){
 			let planets = this.state.planetcollection.map(
 				function(value, index, array) {
-					return (<Planet
-					name={value.get('name')} />
+					return (
+					<div>
+						<Planet name={value.get('name')} />
+						<br/>
+					</div>
 					);
 				});
 
 			return(
 				<section>
-					{/*<img src="/images/galaxy.jpg"/>*/}
+					<img src="/images/galaxy.jpg"/>
 					{planets}
 				</section>
 				);
