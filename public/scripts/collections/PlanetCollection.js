@@ -36,6 +36,4 @@ const PlanetCollection = Backbone.Collection.extend({
 	}
 });
 
-
-
 export default new PlanetCollection();

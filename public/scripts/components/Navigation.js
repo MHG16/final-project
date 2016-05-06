@@ -6,6 +6,7 @@ import {browserHistory} from 'react-router';
 
 export default React.createClass({
 	getInitialstate: function() {
+		console.log('Navigation getInitialstate');
 		return (
 			{user: user}
 
@@ -13,6 +14,7 @@ export default React.createClass({
 	},
 
 	componentDidMount: function() {
+		console.log('Navigation componentDidMount');
 		this.state.user.on('change', () => {
 			this.setState({
 				user: user
