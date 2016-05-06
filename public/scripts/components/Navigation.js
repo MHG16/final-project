@@ -1,27 +1,29 @@
 import React from 'react';
 import {Link} from 'react-router';
 import $ from 'jquery';
-//import user from '../models/user';
+import user from '../models/User.js';
 import {browserHistory} from 'react-router';
-//import PlanetCollection from './../collections/PlanetCollection.js';
-
-
-
 
 export default React.createClass({
 	getInitialstate: function() {
 		return (
-			{user: }
+			{user: user}
 
 			);
+	},
 
-	}
-
+	componentDidMount: function() {
+		this.state.user.on('change', () => {
+			this.setState({
+				user: user
+			});
+		});
+	},
 
 	render: function () {
 
 //if user is logged in should only see links to logout and home 
-//if user is logged out should see links to sign/register and home  
+//if user is logged out should see links to sign-in/register and home  
 		if(!this.state.user.get('id')) {
 			return (<nav>
 			<a href="#" className="nav-links">Login/Register</a>
@@ -35,17 +37,17 @@ export default React.createClass({
 		</nav>);
 		};
 
-	}
+	},
 
-	// logout: function(e) {
-	// 	e.preventDefault();
-	// 	this.state.user.clear();
-	// 	$.ajax({
-	// 		type: 'POST',
-	// 		url: '/auth/logout'
-	// 	});
-	// 	browserHistory.push('/');
-	// }
+	logout: function(e) {
+		e.preventDefault();
+		this.state.user.clear();
+		$.ajax({
+			type: 'POST',
+			url: '/auth/logout'
+		});
+		browserHistory.push('/');
+	}
 
 });
 

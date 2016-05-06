@@ -9,9 +9,8 @@ const UserModel = Backbone.Model.extend ({
 		createdAt: null,
 		updatedAt: null,
 		deletedAt: null
-		
 	},
-	
+
 	idAttribute: 'id'
 
 });
