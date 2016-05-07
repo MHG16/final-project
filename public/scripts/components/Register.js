@@ -23,8 +23,6 @@ export default React.createClass({
 					<div className="error">{this.state.errors.email ? this.state.errors.email.message : null}</div>
 					<input type="password" placeholder="password" ref="password" />
 					<div className="error">{this.state.errors.password ? this.state.errors.password.message : null}</div>
-					<input type="radio" name=" allegiance" value="true" />Rebellion
-					<input type="radio" name=" allegiance" value="true" />Empire
 					<button type="submit">Register</button>
 				</form>
 			</section>
