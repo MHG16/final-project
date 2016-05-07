@@ -5,10 +5,7 @@ import React from 'react';
 export default React.createClass({
 	render: function() {
 		return (
-				<section>
-					<h1>{this.props.name}</h1>
-					<div>{this.props.climate}</div>
-				</section>
+					<h1>This is my Planet Data</h1>
 				);
 	}
 });

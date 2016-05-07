@@ -1,11 +1,12 @@
 import React from 'react';
 
+//component to create planet blog for each planet
+//only regsitered and signed in users can add blog entries
+
 export default React.createClass({
 	render: function() {
 		return (
-			<section>
-				<h1>This is my Blog Component </h1>
-			</section>
+				<h1>This is my Blog Component</h1>
 		);
 	}
 });

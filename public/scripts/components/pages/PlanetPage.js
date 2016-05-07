@@ -1,14 +1,14 @@
 import React from 'react';
-import planetdata from './PlanetData';
-import blog from './blog.js';
+import Planetdata from '../PlanetData.js';
+import Blog from '../Blog.js';
 
 export default React.createClass({
 	render: function() {
 		return (
 			<section>
 				<h1>This is my Planet Page</h1>
-				<planetdata />
-				<blog />
+				<Planetdata />
+				<Blog />
 			</section>
 		);
 	}
