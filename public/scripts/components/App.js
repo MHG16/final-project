@@ -8,7 +8,6 @@ export default React.createClass({
 			<main>
 				<Navigation />
 				{this.props.children}
-				{/*<Footer />*/}
 			</main>
 		);
 	}

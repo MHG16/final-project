@@ -1,6 +1,6 @@
 import React from 'react';
 import planetcollection from '../collections/PlanetCollection.js';
-import Planet from '../../components/Planet.js';
+import Planet from '../components/Planet.js';
 
 /*component to render a picture and all data on the particular planet that was clicked
 on the HomeGalaxy page.  This is displayed on PlanetPage */
