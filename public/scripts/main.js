@@ -14,7 +14,7 @@ const router = (
 	<Router history={browserHistory}>
 		<Route path="/" component={App}>
 			<IndexRoute component={HomeGalaxy}/>
-			<Route path="/planet:planetId" component={PlanetPage}/>
+			<Route path="/planet/:planetId" component={PlanetPage}/>
 		</Route>
 	</Router>
 );
