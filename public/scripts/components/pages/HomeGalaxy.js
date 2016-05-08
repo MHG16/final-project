@@ -9,6 +9,7 @@ export default React.createClass({
 		console.log('getInitialState');
 		return{planetcollection: planetcollection};
 	},
+	
 	componentDidMount: function(){
 		console.log('I mounted Planet!');
 		this.state.planetcollection.on('change update', () => {
@@ -24,7 +25,10 @@ export default React.createClass({
 				function(value, index, array) {
 					return (
 					<div>
-						<Planet name={value.get('name')} id={value.get('id')} />
+						<Planet 
+						key = {value.get('id')}
+						name={value.get('name')} 
+						id={value.get('id')} />
 						<br/>
 					</div>
 					);
