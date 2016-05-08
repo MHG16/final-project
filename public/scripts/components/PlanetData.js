@@ -26,7 +26,7 @@ getInitialState: function(){
 			return(
 				<section>
 					<h1>This is where my planet data will go</h1>
-					<Planet name={value.get('name')} />
+					<Planet />
 				</section> 
 				);
 	}	
