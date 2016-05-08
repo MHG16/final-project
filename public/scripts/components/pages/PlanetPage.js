@@ -28,16 +28,24 @@ export default React.createClass({
 	},
 
 	render: function() {
-		return (
-			<section>
-				<h1>Planet page:</h1>
-					<h2>Name:{this.props.name}</h2>
-					<h2>Climate:{this.props.climate}</h2>
-					<h2>Diameter:{this.props.diameter}</h2>
-					<h2>Population:{this.props.population}</h2>
-				{/*<Blog />*/}
-			</section>
-		);
+			return (
+					<div>
+						<Data 
+						key = {value.get('id')}
+						name={value.get('name')} 
+						id={value.get('id')} />
+						<br/>
+					</div>
+					);
+				});
+
+	return(
+		<section>
+			{/*<img src="/images/galaxy.jpg"/>*/}
+			{planet}
+		</section>
+		);	
+
 	}
 });
 
