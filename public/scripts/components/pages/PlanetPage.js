@@ -8,7 +8,9 @@ export default React.createClass({
 	
 	getInitialState: function () {
 	  	
-		return {planet: new Model({id: this.props.id})};
+		return {
+			planet: new Model({id: this.props.params.planetId})
+		};
 	 },
 
 	componentDidMount: function () {
@@ -28,19 +30,14 @@ export default React.createClass({
 	},
 
 	render: function() {
-			// return (
-			// 		<div>
-			// 			<Planet
-			// 			key = {value.get('id')}
-			// 			name={value.get('name')} 
-			// 			id={value.get('id')} />
-			// 			<br/>
-			// 		</div>
-			// 		);
 				
 		return(
 			<section>
-				<PlanetData />
+				<PlanetData 
+					name={this.state.planet.get('name')} 
+					climate={this.state.planet.get('climate')}
+					diameter={this.state.planet.get('diameter')}
+					population={this.state.planet.get('population')}/>
 				<Blog />
 			</section>
 			);	

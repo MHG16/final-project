@@ -1,22 +1,18 @@
 import React from 'react';
-import {browserHistory} from 'react-router';
+import {Link} from 'react-router';
 
 
+
+
+//want to use params here so I can pass the planet id to the Planet Page   
 export default React.createClass({
 	render: function() {
 		return (
 				<section>
-					{/*<a href={'http://localhost:3000/planet/' + this.props.id}>{this.props.name}</a>*/}
-					<button onClick={this.displayPlanet}>{this.props.name}</button>
+					<Link to={`/planet/${this.props.id}/planetpage`}>{this.props.name}</Link>
 				</section>
 				);
-	},
-
-	displayPlanet: function (e) {
-		browserHistory.push(`/planet/${this.props.id}/planetpage`);
-
 	}
-
 
 });
 

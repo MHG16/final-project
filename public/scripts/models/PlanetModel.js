@@ -14,10 +14,3 @@ export default Backbone.Model.extend({
 	urlRoot: 'http://swapi.co/api/planets/'
 
 });
-
-
-
-
-
-
-
