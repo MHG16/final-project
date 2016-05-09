@@ -20,7 +20,6 @@ export default React.createClass({
 		console.log(this.props.closeModal);
 		return (
                  	<Rayon isOpen={this.props.modalVisible}>
-							<label className="add-user-label">You Have Successfully Registered</label>
 							<Login />
 							<Register />
 						<footer>
