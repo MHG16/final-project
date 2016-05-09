@@ -7,7 +7,7 @@ import blogcollection from './collections/BlogCollection';
 export default React.createClass({
 
 	getInitialState: function(){
-		return {blogcollection: blogcollection};
+		return {blogcollection: []};
 
 	},
 
@@ -34,11 +34,29 @@ export default React.createClass({
 			);
 	},
 
-	savePost: function () {
+//function to save a post to the server.  
+	savePost: function(e) {
+	e.preventDefault();
+	$.ajax({
+		url: '/auth/login',
+		type: 'POST',
+		data: {
+			post: this.refs.post.value
+		},
+
+		success: (loggedArg) => {
+			
+			this.state.post.set(loggedArg);
+		},
+		error: (errorArg) => {
+				
+
+				this.setState({errors: errorArg.responseJSON});
+			}
+		});
 
 	}
 	
-
 });
 
 	
