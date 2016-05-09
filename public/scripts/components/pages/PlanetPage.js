@@ -1,6 +1,6 @@
 import React from 'react';
 import PlanetData from '../PlanetData.js';
-// import Blog from '../Blog.js';
+import Blog from '../Blog.js';
 
 import Model from '../../models/PlanetModel.js';
 
@@ -41,6 +41,7 @@ export default React.createClass({
 		return(
 			<section>
 				<PlanetData />
+				<Blog />
 			</section>
 			);	
 

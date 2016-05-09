@@ -1,5 +1,6 @@
 import React from 'react';
-import blogcollection from './collections/BlogCollection';
+import blogcollection from '../collections/BlogCollection';
+import BlogItem from './BlogItem';   
 
 //component to create planet blog for each planet
 //only regsitered and signed in users can add blog entries
@@ -8,7 +9,7 @@ export default React.createClass({
 
 	getInitialState: function(){
 		return {
-			blogcollection: {} };
+			blogcollection: blogcollection};
 
 	},
 
@@ -16,8 +17,6 @@ export default React.createClass({
 		this.state.blogcollection.on('change update', () => {
 			this.setState({blogcollection: blogcollection});
 		});
-
-		this.state.blogcollection.fetch();
 
 	},
 
@@ -27,9 +26,9 @@ export default React.createClass({
 			<section>
 				<form>
 					<textarea></textarea>
-					<button type="submit" onSubmit={this.savePost} >Save</button>  
+					<button type="submit" onSubmit={this.savePost}>Save</button>  
 				</form>
-				<BlogList />
+				<BlogItem />
 			</section> 
 
 			);
