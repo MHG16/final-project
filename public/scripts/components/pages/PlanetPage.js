@@ -1,5 +1,5 @@
 import React from 'react';
-import Planetdata from '../PlanetData.js';
+import PlanetData from '../PlanetData.js';
 // import Blog from '../Blog.js';
 
 import Model from '../../models/PlanetModel.js';
@@ -28,25 +28,23 @@ export default React.createClass({
 	},
 
 	render: function() {
-			return (
-					<div>
-						<Data 
-						key = {value.get('id')}
-						name={value.get('name')} 
-						id={value.get('id')} />
-						<br/>
-					</div>
-					);
-				});
+			// return (
+			// 		<div>
+			// 			<Planet
+			// 			key = {value.get('id')}
+			// 			name={value.get('name')} 
+			// 			id={value.get('id')} />
+			// 			<br/>
+			// 		</div>
+			// 		);
+				
+		return(
+			<section>
+				<PlanetData />
+			</section>
+			);	
 
-	return(
-		<section>
-			{/*<img src="/images/galaxy.jpg"/>*/}
-			{planet}
-		</section>
-		);	
-
-	}
+		}
 });
 
 

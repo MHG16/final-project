@@ -7,7 +7,8 @@ import blogcollection from './collections/BlogCollection';
 export default React.createClass({
 
 	getInitialState: function(){
-		return {blogcollection: []};
+		return {
+			blogcollection: {} };
 
 	},
 
