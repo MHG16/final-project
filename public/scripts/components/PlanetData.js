@@ -1,5 +1,4 @@
 import React from 'react';
-import planetcollection from '../collections/PlanetCollection.js';
 //import Planet from '../components/Planet.js';
 import PlanetImage from './PlanetImage';
 
@@ -9,19 +8,18 @@ on the HomeGalaxy page.  This is displayed on PlanetPage */
 
 export default React.createClass({
 	
-// getInitialState: function(){
-// 		console.log('getInitialState');
-// 		return{planetcollection: planetcollection};
-// 	},
-// 	componentDidMount: function(){
-// 		console.log('I mounted Planet!');
-// 		this.state.planetcollection.on('change update', () => {
-// 			this.setState({planetcollection: planetcollection});
-// 			console.log('testing');
-// 		});
-// 		this.state.planetcollection.fetch();
-// 		console.log(this.state.planetcollection);
-// 	},
+getInitialState: function(){
+		console.log(this.props.params.id);
+		return{id: this.props.params.id};
+	},
+	componentDidMount: function(){
+		this.state.planetcollection.on('change update', () => {
+			this.setState({id: id});
+
+		});
+		this.state.id.fetch();
+
+	},
 
 	render: function(){
 			return(

@@ -17,7 +17,7 @@ export default React.createClass({
 			this.setState({blogcollection: blogcollection});
 		});
 
-		this.state.planetcollection.fetch();
+		this.state.blogcollection.fetch();
 
 	},
 
