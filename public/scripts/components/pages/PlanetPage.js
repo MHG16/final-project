@@ -1,15 +1,16 @@
 import React from 'react';
 import PlanetData from '../PlanetData.js';
 import Blog from '../Blog.js';
-
 import Model from '../../models/PlanetModel.js';
+import tableplanetmodel from '../../models/TablePlanetModel.js';
 
 export default React.createClass({
 	
 	getInitialState: function () {
 	  	
 		return {
-			planet: new Model({id: this.props.params.planetId})
+			planet: new Model({id: this.props.params.planetId}),
+			tableplanet: new tableplanetmodel({id: this.props.params.planetId})
 		};
 	 },
 
@@ -17,11 +18,14 @@ export default React.createClass({
 
 		this.state.planet.fetch();
 		this.state.planet.on('change', this.modelChange); 
+		this.state.tableplanet.fetch();
+		this.state.tableplanet.on('change', this.modelChange); 
 		
 	},
 
 	componentWillUnmount: function () {
 		this.state.planet.off('change', this.modelChange);
+		this.state.tableplanet.off('change', this.modelChange);
 
 	},
 
@@ -35,6 +39,7 @@ export default React.createClass({
 			<section>
 				<PlanetData 
 					name={this.state.planet.get('name')} 
+					image={this.state.tableplanet.get('image')}
 					climate={this.state.planet.get('climate')}
 					diameter={this.state.planet.get('diameter')}
 					population={this.state.planet.get('population')}

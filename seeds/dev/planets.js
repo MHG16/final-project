@@ -3,7 +3,7 @@ exports.seed = function(knex, Promise) {
   return knex('planets').del().then(() => {
       return Promise.join(
         // Inserts seed entries
-        knex('planets').insert({id: 1, planetName: 'Tatooine', image: '/images/Planet_Images/Tatooine.jpg',
+        knex('planets').insert({id: 1, planetName: 'Tatooine', image: '/images/Planet_Images/Tatooine.png',
           createdAt: new Date()}),
 
         knex('planets').insert({id: 2, planetName: 'Alderaan', image: '/images/Planet_Images/Alderaan.jpg',
