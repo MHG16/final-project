@@ -37,7 +37,13 @@ export default React.createClass({
 					name={this.state.planet.get('name')} 
 					climate={this.state.planet.get('climate')}
 					diameter={this.state.planet.get('diameter')}
-					population={this.state.planet.get('population')}/>
+					population={this.state.planet.get('population')}
+					terrain={this.state.planet.get('terrain')}
+					surface_water={this.state.planet.get('surface_water')}
+					gravity={this.state.planet.get('gravity')}
+					orbital_period={this.state.planet.get('orbital_period')}
+					rotation_period={this.state.planet.get('rotation_period')}
+					/>
 				<Blog />
 			</section>
 			);	

@@ -5,7 +5,12 @@ export default Backbone.Model.extend({
 		name:'',
 		climate:'',
 		diameter:'',
+		terrain:'',
+		surface_water:'',
 		population:'',
+		gravity:'',
+		orbital_period:'',
+		rotation_period:'',
 		createdAt: null,
 		updatedAt: null,
 		deletedAt: null
