@@ -1,6 +1,6 @@
 import React from 'react';
 import PlanetData from '../PlanetData.js';
-import Blog from '../Blog.js';
+import Post from '../Post.js';
 import Model from '../../models/PlanetModel.js';
 import tableplanetmodel from '../../models/TablePlanetModel.js';
 
@@ -49,7 +49,7 @@ export default React.createClass({
 					orbital_period={this.state.planet.get('orbital_period')}
 					rotation_period={this.state.planet.get('rotation_period')}
 					/>
-				<Blog />
+				<Post />
 			</section>
 			);	
 
