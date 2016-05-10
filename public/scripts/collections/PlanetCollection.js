@@ -23,16 +23,6 @@ const PlanetCollection = Backbone.Collection.extend({
 		this.add(models);
 
 
-	
-		// $.ajax({
-		// 	type: 'GET',
-		// 	url: this.url,
-		// 	success: (data) => {
-		// 		this.reset(data.results);
-		// 		//here we are triggering an update so that the component is re-rendered
-		// 		this.trigger('update');
-		// 	}
-		// });
 	}
 });
 
