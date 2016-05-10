@@ -12,7 +12,8 @@ export default React.createClass({
 			return(
 				<section>
 					<h1>Name:{this.props.name}</h1>
-					<PlanetImage />
+					<PlanetImage 
+						image={this.state.planet.get('image')}/>
 					<h2>Climate:{this.props.climate}</h2>
 					<h2>Terrain:{this.props.terrain}</h2>
 					<h2>Surface Water:{this.props.surface_water}</h2>
