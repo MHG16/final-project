@@ -29,7 +29,11 @@ export default React.createClass({
 	savePost: function(e) {
 		e.preventDefault();
 		//want the latest entry to display first below the form
-		
+		//entries should display with newest first 
+		//imagesArray.unshift(image); 
+
+		//this holds the newly saved entry  
+		console.log(this.refs.travelpost.value);  
 
 		//then want the latest post to save to the collection
 		this.state.postcollection.create({
@@ -37,13 +41,22 @@ export default React.createClass({
 			userId: user.get('id'),
 			body: this.refs.travelpost.value 
 
-		});
+		},
+		{
+			success: () => {
+				console.log('success');
+				this.setState({postcollection: postcollection});
+			}
+		}
+
+		);
 
 	},
 
 	success: (loggedArg) => {
 		console.log('I was successful in posting!');
 		this.state.postcollection.set(loggedArg);
+
 		
 	},
 	error: (errorArg) => {
