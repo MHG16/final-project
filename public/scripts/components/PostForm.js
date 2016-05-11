@@ -28,6 +28,10 @@ export default React.createClass({
 
 	savePost: function(e) {
 		e.preventDefault();
+		//want the latest entry to display first below the form
+		
+
+		//then want the latest post to save to the collection
 		this.state.postcollection.create({
 			planetId: this.props.planetId,
 			userId: user.get('id'),

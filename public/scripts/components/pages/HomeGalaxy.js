@@ -26,10 +26,9 @@ export default React.createClass({
 					return (
 					<div>
 						<Planet 
-						key = {value.get('id')}
-						id = {value.get('id')}
-						name={value.get('name')} 
-						id={value.get('id')} />
+						key={value.get('id')}
+						id={value.get('id')}
+						name={value.get('name')} />
 						<br/>
 					</div>
 					);
