@@ -27,6 +27,7 @@ export default React.createClass({
 					<div>
 						<Planet 
 						key = {value.get('id')}
+						id = {value.get('id')}
 						name={value.get('name')} 
 						id={value.get('id')} />
 						<br/>
@@ -36,7 +37,6 @@ export default React.createClass({
 
 			return(
 				<section>
-					{/*<img src="/images/galaxy.jpg"/>*/}
 					{planets}
 				</section>
 				);

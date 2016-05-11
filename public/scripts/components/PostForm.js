@@ -1,6 +1,5 @@
 import React from 'react';
 import postcollection from '../collections/PostCollection'; 
-import $ from 'jquery';
 import user from '../models/User.js';
 
 export default React.createClass({
@@ -19,7 +18,7 @@ export default React.createClass({
 		return (
 			<div>
 				<form onSubmit={this.savePost}>
-					<textarea placeholder="Descibe your visit" ref="travelpost" name="travelpost" cols="40" rows="40"></textarea>
+					<textarea placeholder="Descibe your visit" ref="travelpost" name="travelpost" cols="60" rows="10"></textarea>
 					<button type='submit'>Save</button>
 				</form>
 			</div>

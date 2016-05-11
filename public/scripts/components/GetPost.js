@@ -10,7 +10,7 @@ export default React.createClass({
 	componentDidMount: function() {
 		console.log('componentDidMount');
 		this.state.postcollection.on('change update', () => {
-			this.setState({postcollection: postcollection});
+			this.setState({postcollection: this.state.postcollection});
 
 		});
 		console.log(this.state.postcollection);
