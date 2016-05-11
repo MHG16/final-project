@@ -2,6 +2,7 @@ import React from 'react';
 import postmodel from '../models/PostModel.js';
 import PostForm from './PostForm.js';
 import GetPost from './GetPost.js';
+import user from '../models/User.js';
 
 //component to create planet blog for each planet
 //only regsitered and signed in users can add blog entries
@@ -9,6 +10,9 @@ import GetPost from './GetPost.js';
 export default React.createClass({
 	
 	render: function () {
+		console.log(user.id);
+		if (user.id) {
+
 		return (
 			<div>
 				<PostForm planetId={this.props.planetId}/>
@@ -16,6 +20,16 @@ export default React.createClass({
 			</div> 
 
 			);
+
+		} else {
+			return (
+				<div>
+					<GetPost planetId={this.props.planetId}/>
+				</div>
+
+				);
+		}
+
 	}
 
 });

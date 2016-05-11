@@ -20,6 +20,9 @@ export default React.createClass({
 				}
 			}
 		});
+
+		//need to use where: {planetId: this.props.planetId} here so that each planet page only
+		//displays the blog entries on that page.  
 		this.state.postcollection.fetch({
 			data: {
 				where: {
