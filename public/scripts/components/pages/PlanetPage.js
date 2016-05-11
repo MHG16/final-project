@@ -49,7 +49,7 @@ export default React.createClass({
 					orbital_period={this.state.planet.get('orbital_period')}
 					rotation_period={this.state.planet.get('rotation_period')}
 					/>
-				<Post />
+				<Post planetId={this.props.params.planetId}/>
 			</section>
 			);	
 

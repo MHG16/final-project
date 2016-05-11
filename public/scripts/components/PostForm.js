@@ -1,6 +1,7 @@
 import React from 'react';
 import postcollection from '../collections/PostCollection'; 
 import $ from 'jquery';
+import user from '../models/User.js';
 
 export default React.createClass({
 	getInitialState: function() {
@@ -18,7 +19,7 @@ export default React.createClass({
 		return (
 			<div>
 				<form onSubmit={this.savePost}>
-					<textarea placeholder="Descibe your visit" ref="travelpost" name="travelpost" cols="80" rows="40"></textarea>
+					<textarea placeholder="Descibe your visit" ref="travelpost" name="travelpost" cols="40" rows="40"></textarea>
 					<button type='submit'>Save</button>
 				</form>
 			</div>
@@ -28,13 +29,14 @@ export default React.createClass({
 
 	savePost: function(e) {
 		e.preventDefault();
-		$.ajax({
-		url: '/api/v1/post',
-		type: 'POST',
-		headers: {Accept: 'application/JSON'},
-		data: {
-			body: this.refs.travelpost.value
-		},
+		this.state.postcollection.create({
+			planetId: this.props.planetId,
+			userId: user.get('id'),
+			body: this.refs.travelpost.value 
+
+		});
+
+	},
 
 	success: (loggedArg) => {
 		console.log('I was successful in posting!');
@@ -45,8 +47,8 @@ export default React.createClass({
 			console.log('There was an error in posting');
 			this.setState({errors: errorArg.responseJSON});
 		}
-		});
-	}
+		
+	
 
 
 });

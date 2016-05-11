@@ -11,7 +11,7 @@ export default React.createClass({
 	render: function () {
 		return (
 			<div>
-				<PostForm />
+				<PostForm planetId={this.props.planetId}/>
 				<GetPost />
 			</div> 
 
