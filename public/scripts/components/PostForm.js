@@ -28,13 +28,7 @@ export default React.createClass({
 
 	savePost: function(e) {
 		e.preventDefault();
-		//want the latest entry to display first below the form
-		//entries should display with newest first 
-		//neeed to use unshift(); 
-
-		//this holds the newly saved entry  
-		console.log(this.refs.travelpost.value);  
-
+		
 		//then want the latest post to save to the collection
 		this.state.postcollection.create({
 			planetId: this.props.planetId,
