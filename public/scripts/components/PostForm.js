@@ -1,15 +1,15 @@
 import React from 'react';
-import postcollection from '../collections/PostCollection'; 
+import PostCollection from '../collections/PostCollection'; 
 import user from '../models/User.js';
 
 export default React.createClass({
 	getInitialState: function() {
-		return {postcollection: new postcollection()};
+		return {postcollection: PostCollection};
 	},
 
 	componentDidMount: function() {
 		this.state.postcollection.on('change update', () => {
-			this.setState({postcollection: postcollection});
+			this.setState({postcollection: PostCollection});
 
 		});
 	},
@@ -30,7 +30,7 @@ export default React.createClass({
 		e.preventDefault();
 		//want the latest entry to display first below the form
 		//entries should display with newest first 
-		//imagesArray.unshift(image); 
+		//neeed to use unshift(); 
 
 		//this holds the newly saved entry  
 		console.log(this.refs.travelpost.value);  
@@ -41,15 +41,7 @@ export default React.createClass({
 			userId: user.get('id'),
 			body: this.refs.travelpost.value 
 
-		},
-		{
-			success: () => {
-				console.log('success');
-				this.setState({postcollection: postcollection});
-			}
-		}
-
-		);
+		});
 
 	},
 

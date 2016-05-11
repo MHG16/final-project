@@ -1,10 +1,10 @@
 import React from 'react';
-import postcollection from '../collections/PostCollection'; 
+import PostCollection from '../collections/PostCollection'; 
 import IndivPost from './IndivPost';
 
 export default React.createClass({
 	getInitialState: function() {
-		return {postcollection: new postcollection()};
+		return {postcollection: PostCollection};
 	},
 
 	componentDidMount: function() {
@@ -18,9 +18,10 @@ export default React.createClass({
 	},
 
 	render: function() {
-		console.log('render');
+		console.log(this.state.postcollection);
 
-		let listOfPosts = this.state.postcollection.map((value, i, arr) => {
+		let reversedArray = this.state.postcollection.models.reverse();
+		let listOfPosts = reversedArray.map((value, i, arr) => {
 			return (
 				<IndivPost
 				key = {value.get('id')}
