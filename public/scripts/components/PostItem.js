@@ -3,9 +3,7 @@ import React from 'react';
 export default React.createClass({
 	render: function () {
 		return (
-			<div>
-				
-			</div>
+			<div>{this.props.post}</div>
 			);
 
 	}

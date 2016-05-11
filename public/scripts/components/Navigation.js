@@ -44,18 +44,18 @@ export default React.createClass({
 //if user is logged in should only see links to logout and home 
 //if user is logged out should see links to sign-in/register and home  
 		if(!this.state.user.get('id')) {
-			console.log(this.state.modalVisible);
+			console.log(this.state.modalVisible, 'user is NOT signed in. i want to see a modal');
 			return (<nav>
 			<LoginRegisterModal modalVisible={this.state.modalVisible} closeModal={this.closeModal}/>
 			<a href="#" className="nav-links" onClick={this.openModal}>Login/Register</a>
 			<a href="#" className="nav-links">Home</a>
 			</nav>);
 		} else {
+
 		return (<nav>
 			<a href="#" className="nav-links">Sign Out</a>
 			<Link to="/HomeGalaxy" className="nav-links">Sign Out</Link>
 			<Link to="/planet/:planetId/planetpage" className="nav-links"></Link>
-
 		</nav>);
 		};
 
