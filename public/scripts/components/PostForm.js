@@ -1,5 +1,6 @@
 import React from 'react';
 import postcollection from '../collections/PostCollection'; 
+import $ from 'jquery';
 
 export default React.createClass({
 	getInitialState: function() {
@@ -26,21 +27,22 @@ export default React.createClass({
 	},
 
 	savePost: function(e) {
-		e.preventDefault;
+		e.preventDefault();
 		$.ajax({
 		url: '/api/v1/post',
 		type: 'POST',
+		headers: {Accept: 'application/JSON'},
 		data: {
 			body: this.refs.travelpost.value
 		},
 
 	success: (loggedArg) => {
-			
+		console.log('I was successful in posting!');
 		this.state.postcollection.set(loggedArg);
 		
 	},
 	error: (errorArg) => {
-
+			console.log('There was an error in posting');
 			this.setState({errors: errorArg.responseJSON});
 		}
 		});

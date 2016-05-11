@@ -13,6 +13,7 @@ export default React.createClass({
 			this.setState({postcollection: postcollection});
 
 		});
+		console.log(this.state.postcollection);
 		this.state.postcollection.fetch({data: {}});
 	},
 
