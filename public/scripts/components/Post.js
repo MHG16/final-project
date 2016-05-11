@@ -1,6 +1,7 @@
 import React from 'react';
 import postmodel from '../models/PostModel.js';
 import PostForm from './PostForm.js';
+import GetPost from './GetPost.js';
 
 //component to create planet blog for each planet
 //only regsitered and signed in users can add blog entries
@@ -8,11 +9,10 @@ import PostForm from './PostForm.js';
 export default React.createClass({
 	
 	render: function () {
-		console.log(this.state.postcollection);
 		return (
 			<div>
 				<PostForm />
-				<PostItem />
+				<GetPost />
 			</div> 
 
 			);

@@ -7,8 +7,8 @@ export default React.createClass({
 	},
 
 	componentDidMount: function() {
-		this.state.planetcollection.on('change update', () => {
-			this.setState({planetcollection: planetcollection});
+		this.state.postcollection.on('change update', () => {
+			this.setState({postcollection: postcollection});
 
 		});
 	},

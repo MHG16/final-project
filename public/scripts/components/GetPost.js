@@ -9,17 +9,17 @@ export default React.createClass({
 
 	componentDidMount: function() {
 		console.log('componentDidMount');
-		this.state.planetcollection.on('change update', () => {
-			this.setState({planetcollection: planetcollection});
+		this.state.postcollection.on('change update', () => {
+			this.setState({postcollection: postcollection});
 
 		});
-		planetcollection.fetch({data: {}});
+		this.state.postcollection.fetch({data: {}});
 	},
 
 	render: function() {
 		console.log('render');
 
-		let listOfPosts = this.state.planetcollection.map((value, i, arr) => {
+		let listOfPosts = this.state.postcollection.map((value, i, arr) => {
 			return (
 				<IndivPost
 				key = {value.get('id')}

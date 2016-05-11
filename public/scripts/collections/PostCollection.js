@@ -9,4 +9,4 @@ const PostCollection = Backbone.Collection.extend({
 
 });
 
-export default new PostCollection();
+export default PostCollection;
