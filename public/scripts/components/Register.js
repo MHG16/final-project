@@ -26,18 +26,16 @@ export default React.createClass({
 						<p>Which side are you on?</p>
 						<label>
 							<input 
-								checked = {this.state.user.get('whichSide')==='true'}
-									onChange={this.edit.whichSide}
+								
 									type='radio'
 									name='side'
 									className='radio'
-									value='false'/>
+									value='true'/>
 						Rebellion
 						</label>
 						<label>
 							<input 
-								checked = {this.state.user.get('whichSide')==='true'}
-									onChange={this.edit.whichSide}
+								
 									type='radio'
 									name='side'
 									className='radio'
@@ -85,5 +83,11 @@ export default React.createClass({
 				this.setState({errors: errorArg.responseJSON});
 			}
 		});
+	},
+
+	editWhichSide: function (e) {
+		console.log(e.target.value);
+		this.state.user.set('whichSide', e.target.value);
 	}
+
 });
