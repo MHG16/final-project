@@ -1,5 +1,4 @@
 import React from 'react';
-import $ from 'jquery';
 import Rayon from 'rayon';
 import Login from './Login.js';
 import Register from './Register.js';

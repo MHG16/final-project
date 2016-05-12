@@ -1,5 +1,4 @@
 import React from 'react';
-import postmodel from '../models/PostModel.js';
 import PostForm from './PostForm.js';
 import GetPost from './GetPost.js';
 import user from '../models/User.js';

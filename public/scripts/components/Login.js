@@ -41,7 +41,7 @@ export default React.createClass({
 				
 			
 			this.state.user.set(loggedArg);
-			//browserHistory.push('/stories');
+			browserHistory.push('/');
 		},
 		error: (errorArg) => {
 				
