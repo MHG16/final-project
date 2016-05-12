@@ -11,6 +11,8 @@ export default React.createClass({
 			user: user
 		};
 	},
+	
+
 	render: function() {
 		console.log('render');
 		return (
@@ -26,20 +28,22 @@ export default React.createClass({
 						<p>Which side are you on?</p>
 						<label>
 							<input 
-								
+                                	onChange={this.editWhichSide}
 									type='radio'
 									name='side'
 									className='radio'
-									value='true'/>
+									value="true"
+									/>
 						Rebellion
 						</label>
 						<label>
 							<input 
-								
+                                	onChange={this.editWhichSide}
 									type='radio'
 									name='side'
 									className='radio'
-									value='false'/>
+									value="false"
+									/>
 						Empire
 						</label>
 					</div>
