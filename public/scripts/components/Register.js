@@ -32,6 +32,7 @@ export default React.createClass({
 									name='side'
 									className='radio'
 									value="true"
+									defaultChecked="checked" 
 									/>
 						Rebellion
 						</label>
