@@ -25,16 +25,24 @@ export default React.createClass({
 					<div ref='whichSide'>
 						<p>Which side are you on?</p>
 						<label>
-							<input type='radio'
+							<input 
+								checked = {this.state.user.get('whichSide')==='true'}
+									onChange={this.edit.whichSide}
+									type='radio'
 									name='side'
 									className='radio'
-									value='Rebellion'/>
+									value='false'/>
+						Rebellion
 						</label>
 						<label>
-							<input type='radio'
+							<input 
+								checked = {this.state.user.get('whichSide')==='true'}
+									onChange={this.edit.whichSide}
+									type='radio'
 									name='side'
 									className='radio'
-									value='Empire'/>
+									value='false'/>
+						Empire
 						</label>
 					</div>
 					<div className="error">{this.state.errors.password ? this.state.errors.password.message : null}</div>
@@ -46,6 +54,10 @@ export default React.createClass({
 	register: function(e) {
 		console.log('register');
 		e.preventDefault();
+		var whichSide = this.refs.whichSide.querySelector('input:checked') ?
+            this.refs.whichSide.querySelector('input:checked').value 
+            : this.state.user.get('whichSide');
+
 		$.ajax({
 			url: '/auth/register',
 			type: 'POST',
@@ -53,7 +65,8 @@ export default React.createClass({
 				email: this.refs.email.value,
 				password: this.refs.password.value,
 				firstName: this.refs.firstName.value,
-				lastName: this.refs.lastName.value
+				lastName: this.refs.lastName.value,
+				rebel: whichSide
 			},
 			// dataType: 'json',
 			headers: {
