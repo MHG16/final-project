@@ -22,6 +22,21 @@ export default React.createClass({
 					<input type="text" placeholder="Email" ref="email"/>
 					<div className="error">{this.state.errors.email ? this.state.errors.email.message : null}</div>
 					<input type="password" placeholder="Password" ref="password" />
+					<div ref='whichSide'>
+						<p>Which side are you on?</p>
+						<label>
+							<input type='radio'
+									name='side'
+									className='radio'
+									value='Rebellion'/>
+						</label>
+						<label>
+							<input type='radio'
+									name='side'
+									className='radio'
+									value='Empire'/>
+						</label>
+					</div>
 					<div className="error">{this.state.errors.password ? this.state.errors.password.message : null}</div>
 					<button type="submit">Register</button>
 				</form>
