@@ -51,7 +51,7 @@ export default React.createClass({
 			<a href="#" className="nav-links">Home</a>
 			</nav>);
 		} else {
-			console.log('User is logged in, should be able to create blog posts');
+			console.log('User is logged in, should be able to create blog posts, should see sign out');
 		return (<nav>
 			<Link onClick={this.logout} to="/" className="nav-links">Sign Out</Link>
 			<Link to="/planet/:planetId/planetpage" className="nav-links"></Link>
