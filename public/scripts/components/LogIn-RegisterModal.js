@@ -16,11 +16,11 @@ export default React.createClass({
     
 
 	render: function() {
-		console.log(this.props.closeModal);
+		console.log('this.props.closeModal:', this.props.closeModal);
 		return (
                  	<Rayon isOpen={this.props.modalVisible}>
-							<Login />
-							<Register />
+							<Login closeModal={this.props.closeModal}/> 
+							<Register closeModal={this.props.closeModal}/>
 						<footer>
                         	<button onClick={this.props.closeModal}>Close</button>
                     	</footer>

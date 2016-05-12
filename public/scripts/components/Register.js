@@ -84,6 +84,9 @@ export default React.createClass({
 				console.log(registeredUser);
 				this.state.user.set(registeredUser);
 				console.log(this.state.user);
+				//now need to close the modal
+				this.props.closeModal();
+				//direct to the home page
 				browserHistory.push('/');
 			},
 			error: (errorArg) => {

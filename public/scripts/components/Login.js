@@ -28,6 +28,7 @@ export default React.createClass({
 		);
 	},
 	login: function(e) {
+		console.log('login', this.props);
 	e.preventDefault();
 	$.ajax({
 		url: '/auth/login',
@@ -41,6 +42,10 @@ export default React.createClass({
 				
 			
 			this.state.user.set(loggedArg);
+			//now need to close the modal
+			console.log(this.props.closeModal);
+			this.props.closeModal();
+			//direct to the home page
 			browserHistory.push('/');
 		},
 		error: (errorArg) => {
