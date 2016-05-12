@@ -28,7 +28,6 @@ export default React.createClass({
 						<p>Which side are you on?</p>
 						<label>
 							<input 
-                                	onChange={this.editWhichSide}
 									type='radio'
 									name='side'
 									className='radio'
@@ -38,7 +37,7 @@ export default React.createClass({
 						</label>
 						<label>
 							<input 
-                                	onChange={this.editWhichSide}
+								
 									type='radio'
 									name='side'
 									className='radio'
@@ -56,9 +55,14 @@ export default React.createClass({
 	register: function(e) {
 		console.log('register');
 		e.preventDefault();
-		var whichSide = this.refs.whichSide.querySelector('input:checked') ?
-            this.refs.whichSide.querySelector('input:checked').value 
-            : this.state.user.get('whichSide');
+		var whichSide = this.refs.whichSide.querySelector('input:checked').value;
+		console.log(whichSide);
+		if (whichSide === 'true') {
+			whichSide = true;
+		} else {
+			whichSide = false;
+		}
+
 
 		$.ajax({
 			url: '/auth/register',
@@ -87,11 +91,11 @@ export default React.createClass({
 				this.setState({errors: errorArg.responseJSON});
 			}
 		});
-	},
-
-	editWhichSide: function (e) {
-		console.log(e.target.value);
-		this.state.user.set('whichSide', e.target.value);
 	}
+
+	// editWhichSide: function (e) {
+	// 	console.log(e.target.value);
+	// 	this.state.user.set('whichSide', e.target.value);
+	// }
 
 });
