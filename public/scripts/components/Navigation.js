@@ -7,7 +7,6 @@ import LoginRegisterModal from './Login-RegisterModal.js';
 
 export default React.createClass({
 	getInitialState: function() {
-		console.log('Navigation getInitialstate');
 		return {
 			user: user,
 			modalVisible: false
@@ -16,7 +15,7 @@ export default React.createClass({
 	},
 
 	componentDidMount: function() {
-		console.log('Navigation componentDidMount');
+		console.log('in componentDidMount id is:', user.id);
 		this.state.user.on('change', () => {
 			this.setState({
 				user: user
@@ -33,7 +32,6 @@ export default React.createClass({
 
 
 	closeModal: function() {
-		console.log('Im in closeModal');
         this.setState({
             modalVisible: false
         });
@@ -43,6 +41,7 @@ export default React.createClass({
 
 //if user is logged in should only see links to logout and home 
 //if user is logged out should see links to sign-in/register and home  
+		console.log('in render id is:', user.id);
 		if(!this.state.user.get('id')) {
 			console.log(this.state.modalVisible, 'User is NOT signed in. I want to see a modal');
 			return (<nav>
