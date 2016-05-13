@@ -1,0 +1,34 @@
+@import 'variables';
+
+
+.navdiv {
+	background-color: $sw-black;
+	color: $sw-yellow;
+	overflow: hidden;
+	width: 100%;
+	font-family: 'Helvetica neue', sans-serif;
+	// border-bottom: 12px solid $huddle-blue;
+	margin-bottom: 1em;
+}
+
+.nav-link {
+	background-color: $sw-black;
+	color: $sw-yellow;
+	border: 1px solid $sw-blue;
+	float: right;
+	display: inline-block;
+	margin-left: 1.5em;
+	margin-right: 0.5em;
+	height: 1.5em;
+	text-align: center;
+	text-decoration: none;
+	cursor: pointer;
+
+}
+
+// .nav-link:hover {
+// 	color: $huddle-red;
+// }
+// .nav-link:active {
+// 	color: $huddle-red;
+// }

@@ -1,5 +1,4 @@
 @import url(https://fonts.googleapis.com/css?family=Cinzel);
-@import url(https://fonts.googleapis.com/css?family=Roboto);
 @import 'variables';
 
 .banner-section {
@@ -9,7 +8,7 @@
 	background-color: $sw-black;
 	color: $sw-yellow;
 	font-size: 5em;
-	font-family: 'Cinzel','Roboto', sans-serif;
+	font-family: 'Cinzel','Helvetica neue', sans-serif;
 	padding-left: 0.1em;
 }
 

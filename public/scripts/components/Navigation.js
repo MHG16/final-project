@@ -49,14 +49,14 @@ export default React.createClass({
 			console.log(this.state.modalVisible, 'User is NOT signed in. I want to see a modal');
 			return (<nav>
 			<LoginRegisterModal modalVisible={this.state.modalVisible} closeModal={this.closeModal}/>
-			<a href="#" className="nav-links" onClick={this.openModal}>Login/Register</a>
-			<a href="#" className="nav-links">Home</a>
+			<a href="#" className="nav-link" onClick={this.openModal}>Login/Register</a>
+			<a href="#" className="nav-link">Home</a>
 			</nav>);
 		} else {
 			console.log('User is logged in, should be able to create blog posts, should see sign out');
 		return (<nav>
-			<Link onClick={this.logout} to="/" className="nav-links">Sign Out</Link>
-			<Link to="/planet/:planetId/planetpage" className="nav-links"></Link>
+			<Link onClick={this.logout} to="/" className="nav-link">Sign Out</Link>
+			<Link to="/planet/:planetId/planetpage" className="nav-link"></Link>
 		</nav>);
 		};
 
