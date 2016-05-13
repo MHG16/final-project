@@ -4,19 +4,19 @@ exports.seed = function(knex, Promise) {
       return Promise.join(
         // Inserts seed entries
         knex('planets').insert({id: 1, planetName: 'Tatooine', image: '/images/Planet_Images/Tatooine.png',
-          createdAt: new Date()}),
+          top: 20, left: 20, createdAt: new Date()}),
 
         knex('planets').insert({id: 2, planetName: 'Alderaan', image: '/images/Planet_Images/Alderaan.jpg',
-          createdAt: new Date()}),
+          top: 20, left: 20, createdAt: new Date()}),
         
         knex('planets').insert({id: 3, planetName: 'Yavin', image: '/images/Planet_Images/Yavin.png',
-          createdAt: new Date()}),
+          top: 20, left: 20, createdAt: new Date()}),
         
         knex('planets').insert({id: 4, planetName: 'Hoth', image: '/images/Planet_Images/Hoth.jpg',
-          createdAt: new Date()}),
+          top: 20, left: 20, createdAt: new Date()}),
         
         knex('planets').insert({id: 5, planetName: 'Dagobah', image: '/images/Planet_Images/Dagobah.jpg',
-          createdAt: new Date()}),
+          top: 20, left: 20, createdAt: new Date()}),
         
         knex('planets').insert({id: 6, planetName: 'Bespin', image: '/images/Planet_Images/Bespin.png',
           createdAt: new Date()}),

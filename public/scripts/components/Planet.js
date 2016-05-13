@@ -9,8 +9,8 @@ export default React.createClass({
 	render: function() {
 		let style = {
 			position: 'absolute',
-			top: '20%',
-			left: '20%'
+			top: this.props.top + '%',
+			left: this.props.left + '%'
 		};
 		return (
 				<section style={style}>

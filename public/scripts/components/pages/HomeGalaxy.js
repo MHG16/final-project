@@ -1,7 +1,7 @@
 import React from 'react';
 import planetcollection from '../../collections/PlanetCollection.js';
 import Planet from '../../components/Planet.js';
-
+import $ from 'jquery';
 
 export default React.createClass({
 	
@@ -16,6 +16,9 @@ export default React.createClass({
 			this.setState({planetcollection: planetcollection});
 			console.log('testing');
 		});
+		$.ajax('/api/v1/planet', {success: (planets) => {
+			planetcollection.set(planets);
+		}} );
 		this.state.planetcollection.fetch();
 	
 	},
@@ -28,7 +31,9 @@ export default React.createClass({
 						<Planet 
 						key={value.get('id')}
 						id={value.get('id')}
-						name={value.get('name')} />
+						name={value.get('name')} 
+						top ={value.get('top')}
+						left={value.get('left')}/>
 						<br/>
 					</div>
 					);
