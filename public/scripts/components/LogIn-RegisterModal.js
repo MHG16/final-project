@@ -16,7 +16,7 @@ export default React.createClass({
     
 
 	render: function() {
-		console.log('this.props.closeModal:', this.props.closeModal);
+		// console.log('this.props.closeModal:', this.props.closeModal);
 		return (
                  	<Rayon isOpen={this.props.modalVisible}>
 							<Login closeModal={this.props.closeModal}/> 

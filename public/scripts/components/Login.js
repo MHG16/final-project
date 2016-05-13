@@ -1,7 +1,7 @@
 import React from 'react';
 import $ from 'jquery';
 import {browserHistory} from 'react-router';
-import user from '../models/user';
+import user from '../models/User';
 
 
 export default React.createClass({
@@ -39,11 +39,11 @@ export default React.createClass({
 		},
 
 		success: (loggedArg) => {
-				
-			
-			this.state.user.set(loggedArg);
+			user.set(loggedArg);
+			console.log('successful login request', user.toJSON(), user.cid);
+
 			//now need to close the modal
-			console.log(this.props.closeModal);
+			// console.log(this.props.closeModal);
 			this.props.closeModal();
 			//direct to the home page
 			browserHistory.push('/');
