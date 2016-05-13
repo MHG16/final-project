@@ -1,12 +1,12 @@
 import React from 'react';
-import Navigation from './Navigation';
+import Banner from './Banner.js';
 
 
 export default React.createClass({
 	render: function() {
 		return (
 			<main>
-				<Navigation />
+				<Banner />
 				{this.props.children}
 			</main>
 		);
