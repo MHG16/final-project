@@ -11,17 +11,17 @@ export default React.createClass({
 					<div className='row'>
 						<div className='offset-by-one four columns'>
 							<h1 className='planetname'>{this.props.name}</h1>
-							<img src={this.props.image} className='planetpic'/>
+							<img src={this.props.image} width='95%' height='auto' className='planetpic'/>
 						</div>
-						<div className='six columns'>
-							<h2>Climate:{this.props.climate}</h2>
-							<h2>Terrain:{this.props.terrain}</h2>
-							<h2>Surface Water:{this.props.surface_water}</h2>
-							<h2>Diameter:{this.props.diameter}</h2>
-							<h2>Population:{this.props.population}</h2>
-							<h2>Gravity:{this.props.gravity}</h2>
-							<h2>Orbital Period:{this.props.orbital_period}</h2>
-							<h2>Rotation Period:{this.props.rotation_period}</h2>
+						<div className='four columns'>
+							<h2 className='category'>Climate:</h2><h3 className='data'>{this.props.climate}</h3>
+							<h2 className='category'>Terrain:</h2><h3 className='data'>{this.props.terrain}</h3>
+							<h2 className='category'>Surface Water:</h2><h3 className='data'>{this.props.surface_water}</h3>
+							<h2 className='category'>Diameter:</h2><h3 className='data'>{this.props.diameter}</h3>
+							<h2 className='category'>Population:</h2><h3 className='data'>{this.props.population}</h3>
+							<h2 className='category'>Gravity:</h2><h3 className='data'>{this.props.gravity}</h3>
+							<h2 className='category'>Orbital Period:</h2><h3 className='data'>{this.props.orbital_period}</h3>
+							<h2 className='category'>Rotation Period:</h2><h3 className='data'> {this.props.rotation_period}</h3>
 						</div>
 					</div>
 				</section> 

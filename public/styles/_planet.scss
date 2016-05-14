@@ -5,9 +5,20 @@
 	color: $sw-yellow;
 }
 
+h2.category {
+	font-size: 1.75em;
+	color: $sw-mediumblue;   
+	display:inline;
+	float:left;    
+}
 
-
-
+.data {
+	font-size: 1.5em;
+	color: $sw-lightblue;
+	display:inline;
+	float:left;  
+	margin-left: 1em;  
+}
 
 
 
