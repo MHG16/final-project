@@ -1,18 +1,17 @@
 // typography
 @import url(https://fonts.googleapis.com/css?family=Cinzel);
-@import url(https://fonts.googleapis.com/css?family=Roboto);
+
 
 
 @import 'variables';
 
 
 // page components
-// body {
-// 	font-family: 'Roboto', sans-serif;
-// 	color: $sw-black; 
-// 	font-size: 14px;
-
-// }
+body {
+   	background: url(../images/starsandnebula250.jpg);
+  	background-repeat: repeat;  
+  	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;  
+ }
 
 
 

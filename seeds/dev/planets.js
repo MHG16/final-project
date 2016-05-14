@@ -19,19 +19,19 @@ exports.seed = function(knex, Promise) {
           top: 20, left: 20, createdAt: new Date()}),
         
         knex('planets').insert({id: 6, planetName: 'Bespin', image: '/images/Planet_Images/Bespin.png',
-          createdAt: new Date()}),
+          top: 20, left:20, createdAt: new Date()}),
         
         knex('planets').insert({id: 7, planetName: 'Endor', image: '/images/Planet_Images/Endor.png',
-          createdAt: new Date()}),
+          top: 20, left:20, createdAt: new Date()}),
         
         knex('planets').insert({id: 8, planetName: 'Naboo', image: '/images/Planet_Images/Naboo.png',
-           createdAt: new Date()}),
+          top: 20, left:20, createdAt: new Date()}),
         
         knex('planets').insert({id: 9, planetName: 'Coruscant', image: '/images/Planet_Images/Coruscant.png',
-           createdAt: new Date()}),
+          top: 20, left:20, createdAt: new Date()}),
         
         knex('planets').insert({id: 61, planetName: 'Jakku', image: '/images/Planet_Images/Jakku.jpg',
-          createdAt: new Date() })
+          top: 20, left:20, createdAt: new Date() })
   	);
   });
 };
