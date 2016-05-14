@@ -1,7 +1,9 @@
 @import 'variables';
 
 .rayon{
+	background-color: $sw-blue;  
 	padding: 2em;
+	border-radius: 1em;  
 	fieldset{
 		width: 50%;
 		margin: 0 auto;
@@ -9,6 +11,7 @@
 	}
 	input{
 		width: 100%;
+		background-color: $sw-lightblue;  
 	}
 	.button-container{
 		text-align: right;
@@ -19,9 +22,29 @@
 		color: white;
 		margin-right: 1em;
 	}
+
+	button.button-primary {
+		background-color: $sw-mediumblue;  
+
+	}
+
+	button {
+		background-color: $sw-mediumblue;
+	}
+
 	.close{
 		font-size: 10pt;
 	}
+
+	footer {
+		background-color: $sw-darkgray;  
+	}
+
+
+	::-webkit-input-placeholder {
+		color: $sw-blue; 
+	}
+
 };
 
 
