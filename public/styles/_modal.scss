@@ -9,6 +9,17 @@
 		margin: 0 auto;
 		max-width: 15em;
 	}
+
+	section.page-login.container {
+		margin: 0;  
+	}
+
+
+	input.u-full-width {
+		width: 200%;
+	}
+
+
 	input{
 		width: 100%;
 		background-color: $sw-lightblue;  
