@@ -40,8 +40,13 @@ export default React.createClass({
 				});
 
 			return(
-				<section>
-					{planets}
+				<section className='galaxy'>
+					<div class="row">
+						<div class="six columns">
+							 <img src='../images/sw_galaxy.png' width='85%' height='auto'/>
+							{planets}
+						</div>
+					</div>
 				</section>
 				);
 	}	

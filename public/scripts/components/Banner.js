@@ -7,6 +7,7 @@ export default React.createClass({
 		return (
 			<section className='banner-section'>
         		<div className='banner'>Star Wars</div>
+        		<div className='subtitle'>The Travel Guide</div>
         		<Navigation />
 			</section>
 		);

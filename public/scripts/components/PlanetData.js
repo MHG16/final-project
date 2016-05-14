@@ -8,7 +8,7 @@ export default React.createClass({
 	render: function(){
 			return(
 				<section>
-					<h1>Name:{this.props.name}</h1>
+					<p className='data'>{this.props.name}</p>
 					<img src={this.props.image}/> 
 					<h2>Climate:{this.props.climate}</h2>
 					<h2>Terrain:{this.props.terrain}</h2>
