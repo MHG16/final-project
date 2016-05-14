@@ -5,6 +5,13 @@
 	color: $sw-yellow;
 }
 
+img.planetpic {
+	border:2px solid $sw-lightgray;
+	border-radius: .5em;  
+}
+
+
+
 h2, h3 {
 	display:inline;
 }
@@ -17,6 +24,7 @@ h2.category {
 .data {
 	font-size: 1.5em;
 	color: $sw-lightblue;
+	margin-left: 1em;   
 }
 
 
