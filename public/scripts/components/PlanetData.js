@@ -9,7 +9,7 @@ export default React.createClass({
 			return(
 				<section>
 					<p className='data'>{this.props.name}</p>
-					<img src={this.props.image}/> 
+					<img src={this.props.image} className='planetpic'/> 
 					<h2>Climate:{this.props.climate}</h2>
 					<h2>Terrain:{this.props.terrain}</h2>
 					<h2>Surface Water:{this.props.surface_water}</h2>

@@ -13,7 +13,6 @@
 .nav-link {
 	background-color: $sw-black;
 	color: $sw-yellow;
-	border: 1px solid $sw-blue;
 	float: right;
 	display: inline-block;
 	margin-left: 1.5em;
@@ -25,9 +24,9 @@
 
 }
 
-// .nav-link:hover {
-// 	color: $huddle-red;
-// }
-// .nav-link:active {
-// 	color: $huddle-red;
-// }
+.nav-link:hover {
+	color: $sw-blue;
+}
+.nav-link:active {
+	color: $sw-red;
+}
