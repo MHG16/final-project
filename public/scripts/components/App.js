@@ -6,11 +6,11 @@ import Footer from './Footer.js';
 export default React.createClass({
 	render: function() {
 		return (
-			<main>
+			<section className='main'>
 				<Banner />
 				{this.props.children}
 				<Footer />
-			</main>
+			</section>
 		);
 	}
 });

@@ -1,11 +1,25 @@
+@import url(https://fonts.googleapis.com/css?family=Cinzel);
 @import 'variables';
-
 
 .galaxy {
    img: src='../images/sw_galaxy.png';
  }
 
+.routes {
+	color: $sw-lightblue;
+	font-size: 1em;
+	font-family: 'Helvetica neue', sans-serif;
+	list-style-type: none
+}
 
+
+
+.maptitle {
+	color: $sw-yellow;
+	font-size: 3em;
+	font-family: 'Cinzel','Helvetica neue', sans-serif;
+	padding-left: 0.1em; 
+}
 
 
 

@@ -42,11 +42,21 @@ export default React.createClass({
 			return(
 				<section className='galaxy'>
 					<div class="row">
-						<div class="six columns">
+						<div className="ten columns">
 							 <img src='../images/sw_galaxy.png' width='85%' height='auto'/>
 							{planets}
 						</div>
+						<div className="two columns">
+							<ul>
+							  <li className='routes'>1 Perlemian Trade Route</li>
+							  <li className='routes'>2 Corellian Run</li>
+							  <li className='routes'>3 Corellian Trade Spine</li>
+							  <li className='routes'>4 Rima Trade Spine</li>
+							  <li className='routes'>5 Hydian Way</li>
+							</ul>
+						</div> 
 					</div>
+					<div className='maptitle'>The Galaxy</div>
 				</section>
 				);
 	}	
