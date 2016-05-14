@@ -5,14 +5,17 @@
    img: src='../images/sw_galaxy.png';
  }
 
-.routes {
-	color: $sw-lightblue;
-	font-size: 1em;
-	font-family: 'Helvetica neue', sans-serif;
-	list-style-type: none
+.mapindex {
+	border: 2px solid $sw-lightblue;  
 }
 
 
+.routes {
+	color: $sw-lightblue;
+	font-size: 1.5em;
+	font-family: 'Helvetica neue', sans-serif;
+	list-style-type: none;
+}
 
 .maptitle {
 	color: $sw-yellow;

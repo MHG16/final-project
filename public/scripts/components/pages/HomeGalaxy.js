@@ -47,7 +47,7 @@ export default React.createClass({
 							{planets}
 						</div>
 						<div className="two columns">
-							<ul>
+							<ul className='mapindex'>
 							  <li className='routes'>1 Perlemian Trade Route</li>
 							  <li className='routes'>2 Corellian Run</li>
 							  <li className='routes'>3 Corellian Trade Spine</li>

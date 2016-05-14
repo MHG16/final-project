@@ -9,15 +9,17 @@
 	color: $sw-yellow;
 	font-size: 5em;
 	font-family: 'Cinzel','Helvetica neue', sans-serif;
-	padding-left: 0.1em; 
-	
+	padding-left: 0.1em; 	
+	height: 1.2em;  
 }
+
 .subtitle {
+	background-color: $sw-black;  
 	color: $sw-yellow;
 	font-size: 1.75em;
 	font-family: 'Cinzel','Helvetica neue', sans-serif;
 	border-bottom: $sw-yellow solid 2px; 
-	padding-left: 0.1em;  
+	padding-left: 0.5em;  
 }
 
 
