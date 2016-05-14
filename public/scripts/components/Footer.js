@@ -5,7 +5,7 @@ export default React.createClass({
 	render: function() {
 		return (
 			<section className='footer-section'>
-        		<div className='footer'>&copy; MHG Design 2016 </div>
+        		<div className='footer'>MHG Design &copy; 2016 </div>
 			</section>
 		);
 	}

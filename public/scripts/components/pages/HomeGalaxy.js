@@ -41,7 +41,7 @@ export default React.createClass({
 
 			return(
 				<section className='galaxy'>
-					<div class="row">
+					<div className="row">
 						<div className="ten columns">
 							 <img src='../images/sw_galaxy.png' width='85%' height='auto'/>
 							{planets}
