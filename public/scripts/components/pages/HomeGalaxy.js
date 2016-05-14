@@ -27,15 +27,12 @@ export default React.createClass({
 			let planets = this.state.planetcollection.map(
 				function(value, index, array) {
 					return (
-					<div>
 						<Planet 
 						key={value.get('id')}
 						id={value.get('id')}
 						name={value.get('name')} 
 						top ={value.get('top')}
 						left={value.get('left')}/>
-						<br/>
-					</div>
 					);
 				});
 
