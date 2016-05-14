@@ -16,11 +16,18 @@ export default React.createClass({
 
 	render: function() {
 		return (
-			<div>
-				<form onSubmit={this.savePost}>
-					<textarea placeholder="Descibe your visit" ref="travelpost" name="travelpost" cols="60" rows="10"></textarea>
-					<button type='submit'>Save</button>
-				</form>
+			<div className='row'>
+				<div className='offset-by-one ten columns'>
+					<form class='postform' onSubmit={this.savePost}>
+						<textarea className='postentry' 
+								placeholder="Describe your visit" 
+								ref="travelpost" 
+								name="travelpost" 
+								cols="80" 
+								rows="10"></textarea>
+						<button type='submit'>Save</button>
+					</form>
+				</div>
 			</div>
 			);
 
