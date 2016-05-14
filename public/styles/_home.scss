@@ -6,9 +6,17 @@
  }
 
 .mapindex {
-	border: 2px solid $sw-lightblue; 
-	margin-top: 20em;   
+	border: 3px solid $sw-lightblue; 
+	border-radius: .5em;  
+	margin-top: 18em;   
+	padding-left: 1em;  
+	padding-right: 1em;   
 }
+
+div.two.columns {
+	margin-left: 0;  
+}
+
 
 .routes {
 	color: $sw-lightblue;
