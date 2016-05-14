@@ -12,6 +12,11 @@
 
 	section.page-login.container {
 		margin: 0;  
+		padding-bottom: 0;
+	}
+
+	section {
+		padding-top: 0;  
 	}
 
 
@@ -34,6 +39,21 @@
 		margin-right: 1em;
 	}
 
+	.choose {
+		font-size: 2em;  
+	}
+
+	label {
+		display: inline;
+		float:left;
+		width: 50%;
+		margin-bottom: 1em;  
+	}
+
+	span {
+		font-size: 2em;  
+	}
+
 	button.button-primary {
 		background-color: $sw-mediumblue;  
 
@@ -48,7 +68,8 @@
 	}
 
 	footer {
-		background-color: $sw-darkgray;  
+		background-color: $sw-darkgray;
+		border-radius: .5em;   
 	}
 
 

@@ -25,7 +25,7 @@ export default React.createClass({
 					<div className="error">{this.state.errors.email ? this.state.errors.email.message : null}</div>
 					<input type="password" placeholder="Password" ref="password" />
 					<div ref='whichSide'>
-						<p>Which side are you on?</p>
+						<h4 className='choose'>Which side are you on?</h4>
 						<label>
 							<input 
 									type='radio'
