@@ -12,14 +12,14 @@ export default React.createClass({
 
 		return (
 			<div className='rebel'>
-				<img src ='./images/Logos/Rebel.png' width='50%' height='auto'/>
+				<img src ='../../images/Logos/Rebel.png' width='50%' height='auto'/>
 			</div>
 			);
 
 		} else {
 			return (
 				<div className='empire'>
-					<img src ='./images/Logos/Empire.png' width='50%' height='auto'/>
+					<img src ='../../images/Logos/Empire.png' width='50%' height='auto'/>
 				</div>    
 				);
 		}
