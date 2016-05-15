@@ -11,19 +11,25 @@ export default React.createClass({
 		if (user.rebel === 'true') {
 
 		return (
-			<div className='rebel'>
-				<img src ='../../images/Logos/rebel.png' width='50%' height='auto'/>
-			</div>
+					<div className='row'>
+							<div className='offset-by-eight four columns'>
+								<img className='rebel' src ='../../images/Logos/rebel.png' width='30%' height='auto'/>
+							</div>
+					</div>
 			);
 
 		} else {
 			return (
-				<div className='empire'>
-					<img src ='../../images/Logos/empire.png' width='50%' height='auto'/>
-				</div>    
+					<div className='row'>
+						<div className='three columns'>
+							<img className='empire' src ='../../images/Logos/empire.png' width='30%' height='auto'/>
+						</div>
+					</div>  
+		
 				);
 		}
 
 	}
 
 });
+
