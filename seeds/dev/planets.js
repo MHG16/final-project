@@ -25,13 +25,13 @@ exports.seed = function(knex, Promise) {
           top: 140, left:10, createdAt: new Date()}),
         
         knex('planets').insert({id: 8, planetName: 'Naboo', image: '/images/Planet_Images/Naboo.png',
-          top: 20, left:20, createdAt: new Date()}),
+          top: 140, left:38, createdAt: new Date()}),
         
         knex('planets').insert({id: 9, planetName: 'Coruscant', image: '/images/Planet_Images/Coruscant.png',
-          top: 20, left:20, createdAt: new Date()}),
+          top: 80, left:20, createdAt: new Date()}),
         
         knex('planets').insert({id: 61, planetName: 'Jakku', image: '/images/Planet_Images/Jakku.jpg',
-          top: 20, left:20, createdAt: new Date() })
+          top: 109, left:12, createdAt: new Date() })
   	);
   });
 };
