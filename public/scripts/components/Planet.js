@@ -14,7 +14,7 @@ export default React.createClass({
 		};
 		return (
 				<section style={style} className='round'>
-					<Link to={`/planet/${this.props.id}/planetpage`}>{this.props.name}</Link>
+					<Link className='link' to={`/planet/${this.props.id}/planetpage`}>{this.props.name}</Link>
 				</section>
 				);
 	}

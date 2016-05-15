@@ -51,8 +51,18 @@ div.two.columns {
 	width: 25px;
 	height: 25px;
 	border-radius: 25px;
-	background-color: $sw-white;
+	background-color: #005914;
 }
+
+.link {
+	color: transparent;  
+	text-decoration: none;  
+}
+
+.link:hover {
+	color: $sw-white;    
+}
+
 
 
 
