@@ -4,7 +4,11 @@ export default React.createClass({
 	render: function() {
 		return(
 			<section>
-				<div>{this.props.body}</div>
+				<div className='row'>
+						<div className='offset-by-one eight columns' id='singlepost'>
+							<p className='text'>{this.props.body}</p>
+						</div>
+				</div>
 			</section>
 
 			);

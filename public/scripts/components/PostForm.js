@@ -23,9 +23,14 @@ export default React.createClass({
 								placeholder="Describe your visit" 
 								ref="travelpost" 
 								name="travelpost" 
-								cols="80" 
-								rows="10"></textarea>
-						<button type='submit'>Save</button>
+								cols="120" 
+								rows="15"></textarea>
+
+						<div className='row'>		
+							<div className='offset-by-seven one columns'>
+								<button type='submit'>Save</button>
+							</div>
+						</div>
 					</form>
 				</div>
 			</div>
