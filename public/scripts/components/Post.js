@@ -11,6 +11,7 @@ export default React.createClass({
 	
 	render: function () {
 		console.log(user.id);
+		console.log(user.rebel);
 		if (user.id) {
 
 		return (

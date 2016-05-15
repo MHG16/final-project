@@ -8,7 +8,7 @@ export default React.createClass({
 	
 	render: function () {
 		console.log(user.rebel);
-		if (user.rebel === true) {
+		if (user.rebel === 'true') {
 
 		return (
 			<div className='rebel'>

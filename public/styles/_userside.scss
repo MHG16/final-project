@@ -1,12 +1,16 @@
 @import 'variables';
 
 .rebel {
-	background-color: $sw-red;
+	background-color: $sw-blue;
+	max-width: 25%;
+    height: auto;
 }
 
 
 .empire {
-	background-color: $sw-blue;
+	background-color: $sw-red;
+	max-width: 25%;
+    height: auto;
 }
 
 
