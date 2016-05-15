@@ -7,7 +7,7 @@ export default React.createClass({
 
 	render: function(){
 			return(
-				<section>
+				<section className='planetdata'>
 					<div className='row'>
 						<div className='offset-by-one four columns'>
 							<h1 className='planetname'>{this.props.name}</h1>
