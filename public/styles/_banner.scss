@@ -6,7 +6,8 @@
 }
 .banner {
 	background-color: $sw-black;
-	color: $sw-yellow;
+	color: $sw-black;
+	text-shadow: 1px 1px 2px $sw-yellow, -1px -1px 2px $sw-yellow;
 	font-size: 5em;
 	font-family: 'Cinzel','Helvetica neue', sans-serif;
 	padding-left: 0.1em; 	
