@@ -17,17 +17,15 @@ export default React.createClass({
 	render: function() {
 		return (
 			<div className='row'>
-				<div className='offset-by-one ten columns'>
+				<div className='offset-by-two eight columns'>
 					<form class='postform' onSubmit={this.savePost}>
 						<textarea className='postentry' 
-								placeholder="Describe your visit" 
+								placeholder="Please describe your visit to this planet." 
 								ref="travelpost" 
-								name="travelpost" 
-								cols="120" 
+								name="travelpost"  
 								rows="15"></textarea>
-
 						<div className='row'>		
-							<div className='offset-by-seven one columns'>
+							<div className='offset-by-ten one columns'>
 								<button type='submit'>Save</button>
 							</div>
 						</div>
