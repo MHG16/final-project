@@ -47,7 +47,12 @@ div.two.columns {
 	padding-left: 0.1em; 
 }
 
-
+.round {
+	width: 25px;
+	height: 25px;
+	border-radius: 25px;
+	background-color: $sw-white;
+}
 
 
 
