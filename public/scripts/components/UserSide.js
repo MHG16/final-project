@@ -12,8 +12,8 @@ export default React.createClass({
 
 		return (
 					<div className='row'>
-							<div className='offset-by-eight four columns'>
-								<img className='rebel' src ='../../images/Logos/rebel.png' width='30%' height='auto'/>
+							<div className='offset-by-nine three columns'>
+								<img className='rebel' src ='../../images/Logos/rebel.png' width='40%' height='auto'/>
 							</div>
 					</div>
 			);
@@ -21,8 +21,8 @@ export default React.createClass({
 		} else {
 			return (
 					<div className='row'>
-						<div className='three columns'>
-							<img className='empire' src ='../../images/Logos/empire.png' width='30%' height='auto'/>
+						<div className='offset-by-nine three columns'>
+							<img className='empire' src ='../../images/Logos/empire.png' width='40%' height='auto'/>
 						</div>
 					</div>  
 		
