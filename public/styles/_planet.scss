@@ -35,7 +35,7 @@ form {
 }
 
 .postentry {
-	width: 100%;
+	width: 100%; 
 }
 
 button {
@@ -50,6 +50,7 @@ button:hover {
 	background-color: $sw-lightblue;
 	padding: 1em;  
 	border-radius: .5em;  
+	margin-bottom: 1em; 
 }
 
 .text {
