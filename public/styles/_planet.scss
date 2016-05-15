@@ -2,7 +2,7 @@
 
 
 .planetname {
-	font-size: 2em;
+	font-size: 2.5em;
 	color: $sw-yellow;
 }
 
@@ -21,7 +21,7 @@ h2, h3 {
 
 h2.category {
 	font-size: 1.75em;
-	color: $sw-mediumblue;   
+	color: $sw-yellow;   
 }
 
 .data {
@@ -49,8 +49,7 @@ button:hover {
 #singlepost {
 	background-color: $sw-lightblue;
 	padding: 1em;  
-	border-radius: .5em;  
-	margin-bottom: 1em; 
+	border: 1em solid $sw-darkgray;  
 }
 
 .text {
