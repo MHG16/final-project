@@ -20,21 +20,78 @@ div.two.columns {
 .core {
 	color: $sw-black;
 	position:absolute;
+	background-color: $sw-white;  
+	border-radius:.5em;  
 	top: 95%;
 	left: 22%;  
 }
 
 .hutt {
-	color: $sw-white;
+	color: $sw-black;
+	background-color: $sw-white;
+	border-radius:.5em; 
 	position:absolute;
 	top: 96%;
 	left: 53%;
 }
 
+.colonies {
+	color: $sw-black;
+	background-color: $sw-white;
+	border-radius:.5em; 
+	position:absolute;
+	top: 114%;
+	left: 22%; 
+}
+
+.outer {
+	color: $sw-black;
+	background-color: $sw-white;
+	border-radius:.5em; 
+	position:absolute;
+	top: 175%;
+	left: 13%; 
+}
+
+.mid {
+	color: $sw-black;
+	background-color: $sw-white;
+	border-radius:.5em; 
+	position:absolute;
+	top: 125%;
+	left: 45%; 
+}
+
+.expansion {
+	color: $sw-black;
+	background-color: $sw-white;
+	border-radius:.5em; 
+	position:absolute;
+	top: 110%;
+	left: 36%; 
+}
+
+.inner {
+	color: $sw-black;
+	background-color: $sw-white;
+	border-radius:.5em; 
+	position:absolute;
+	top: 69%;
+	left: 30%; 
+}
+
+.western {
+	color: $sw-black;
+	background-color: $sw-white;
+	border-radius:.5em; 
+	position:absolute;
+	top: 145%;
+	left: 10%; 
+}
 
 
 .routes {
-	color: $sw-lightblue;
+	color: $sw-lightgray;
 	font-size: 1.5em;
 	font-family: 'Helvetica neue', sans-serif;
 	list-style-type: none;
