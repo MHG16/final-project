@@ -8,18 +8,18 @@ export default React.createClass({
 	
 	render: function () {
 		console.log(user.rebel);
-		if (user.rebel === 'true') {
+		if (user.rebel === true) {
 
 		return (
 			<div className='rebel'>
-				<img src ='../../images/Logos/Rebel.png' width='50%' height='auto'/>
+				<img src ='../../images/Logos/rebel.png' width='50%' height='auto'/>
 			</div>
 			);
 
 		} else {
 			return (
 				<div className='empire'>
-					<img src ='../../images/Logos/Empire.png' width='50%' height='auto'/>
+					<img src ='../../images/Logos/empire.png' width='50%' height='auto'/>
 				</div>    
 				);
 		}
