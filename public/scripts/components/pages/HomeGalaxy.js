@@ -53,6 +53,7 @@ export default React.createClass({
 						</div>
 						<div className="two columns">
 							<ul className='mapindex'>
+							  <li className='planet'><div className='sphere'></div>Planet</li>
 							  <li className='routes'>1 Perlemian Trade Route</li>
 							  <li className='routes'>2 Corellian Run</li>
 							  <li className='routes'>3 Corellian Trade Spine</li>

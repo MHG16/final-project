@@ -13,6 +13,20 @@
 	padding-right: 1em;   
 }
 
+.planet {
+	color: $sw-tan;  
+	font-size: 1.25em;  
+	list-style-type: none;  	
+
+}
+
+.sphere {
+	width: 25px;
+	height: 25px;
+	border-radius: 25px;
+	background-color: $sw-tan; 
+}
+
 div.two.columns {
 	margin-left: 0;  
 }
