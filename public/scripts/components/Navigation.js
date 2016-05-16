@@ -57,7 +57,7 @@ export default React.createClass({
 		return (<nav>
 			<Link onClick={this.logout} to="/" className="nav-link">Sign Out</Link>
 			<Link to="/planet/:planetId/planetpage" className="nav-link"></Link>
-			<a href="#" className="nav-link">Home</a>
+			<Link to="/" className="nav-link">Home</Link>
 		</nav>);
 		};
 
