@@ -16,6 +16,7 @@ export default Backbone.Model.extend({
 		deletedAt: null
 	},
 	idAttribute: 'id',
-	urlRoot: '//swapi.co/api/planets/'
-
+	url: function() {
+		return 'http://swapi.co/api/planets/'+this.id+'/';
+	}
 });
