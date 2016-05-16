@@ -7,7 +7,7 @@ const PlanetCollection = Backbone.Collection.extend({
 	url: '//swapi.co/api/planets/',
 
 	//we are redefining fetch here as the data needed is in the results 
-	fetch: function() {
+	fetch: function(options) {
 
 		const ids = [1, 2, 3, 4, 5, 6, 7, 8, 9, 61];
 
@@ -26,9 +26,10 @@ const PlanetCollection = Backbone.Collection.extend({
 		this.add(models);
 
 		models.forEach(model => model.fetch({
-			success: () => {
-				console.log('success', this);
-				this.trigger('update');
+			success: (data) => {
+				if(options.success) {
+					options.success(data);
+				}
 			}
 		}));
 

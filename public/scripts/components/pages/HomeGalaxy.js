@@ -14,12 +14,14 @@ export default React.createClass({
 		console.log('I mounted Planet!');
 		this.state.planetcollection.on('change update', () => {
 			this.setState({planetcollection: planetcollection});
-			console.log('change update');
 		});
 		$.ajax('/api/v1/planet', {success: (planets) => {
 			planetcollection.set(planets);
 		}} );
-		this.state.planetcollection.fetch();
+		this.state.planetcollection.fetch({success: (data) => {
+			console.log('got success from collection fetch');
+			this.setState({planetcollection: planetcollection});
+		}});
 	
 	},
 
