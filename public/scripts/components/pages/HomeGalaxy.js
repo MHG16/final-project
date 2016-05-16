@@ -15,9 +15,9 @@ export default React.createClass({
 		this.state.planetcollection.on('change update', () => {
 			this.setState({planetcollection: planetcollection});
 		});
-		$.ajax('/api/v1/planet', {success: (planets) => {
-			planetcollection.set(planets);
-		}} );
+		// $.ajax('/api/v1/planet', {success: (planets) => {
+		// 	planetcollection.set(planets);
+		// }} );
 		this.state.planetcollection.fetch({success: (data) => {
 			console.log('got success from collection fetch', planetcollection);
 			this.setState({planetcollection: planetcollection});
