@@ -85,14 +85,25 @@ div.num {
 	left: 77%;
 }
 
+.core1 {
+	color: $sw-black;
+	background-color: $sw-lightgray; 
+	border-radius:.5em; 
+	position:absolute;
+	padding: .1em;  
+	top: 52%;
+	left: 34%;
+}
+
+
 .colonies {
 	color: $sw-black;
 	background-color: $sw-lightgray; 
 	border-radius:.5em; 
 	position:absolute;
 	padding: .1em; 
-	top: 20%;
-	left: 20%; 
+	top: 56%;
+	left: 32%; 
 }
 
 .outer {

@@ -42,6 +42,7 @@ export default React.createClass({
 						<div className="ten columns galaxycontainer">
 							 <img src='../images/sw_galaxy.png' width='100%' height='auto'/>
 							 <p className='core'>Deep Core</p>
+							 <p className='core1'>Core</p>
 							 <p className='hutt'>Hutt Space</p>
 							 <p className='colonies'>Colonies</p>
 							 <p className='outer'>Outer Rim</p>
