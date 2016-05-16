@@ -15,6 +15,7 @@ const PlanetCollection = Backbone.Collection.extend({
 			let model = new PlanetModel({id: id});
 			model.fetch({
 				success: () => {
+					this.trigger('update');
 					console.log('fetch success');
 				}
 			});
