@@ -12,18 +12,20 @@ const PlanetCollection = Backbone.Collection.extend({
 		const ids = [1, 2, 3, 4, 5, 6, 7, 8, 9, 61];
 
 		let models = ids.map(id => {
-			let model = new PlanetModel({id: id});
-			model.fetch({
-				success: () => {
-					this.trigger('update');
-					console.log('fetch success');
-				}
-			});
-			return model;
+			return new PlanetModel({id: id});
+			// model.fetch({
+			// 	success: () => {
+			// 		this.trigger('update');
+			// 		console.log('fetch success');
+			// 	}
+			// });
+			// return model;
 		});
 
 		this.reset([]);
 		this.add(models);
+
+		models.forEach(model => model.fetch());
 
 
 	}
