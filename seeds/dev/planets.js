@@ -16,7 +16,7 @@ exports.seed = function(knex, Promise) {
           top: 83, left: 28, createdAt: new Date()}),
         
         knex('planets').insert({id: 5, planetName: 'Dagobah', image: '/images/Planet_Images/Dagobah.jpg',
-          top: 20, left: 20, createdAt: new Date()}),
+          top: 87, left: 44, createdAt: new Date()}),
         
         knex('planets').insert({id: 6, planetName: 'Bespin', image: '/images/Planet_Images/Bespin.png',
           top: 81, left:29, createdAt: new Date()}),
