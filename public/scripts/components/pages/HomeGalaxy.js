@@ -19,7 +19,7 @@ export default React.createClass({
 			planetcollection.set(planets);
 		}} );
 		this.state.planetcollection.fetch({success: (data) => {
-			console.log('got success from collection fetch');
+			console.log('got success from collection fetch', planetcollection);
 			this.setState({planetcollection: planetcollection});
 		}});
 	
