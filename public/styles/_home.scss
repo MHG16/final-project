@@ -19,6 +19,7 @@
 	list-style-type: none; 
 	display:inline;
 	float:left; 	
+	margin-top: .2em;  
 
 }
 
@@ -29,7 +30,13 @@
 	display:inline;
 	float:left; 
 	background-color: $sw-tan; 
+	margin-top: .2em;
 }
+
+div.sphere {
+	margin-right: .4em; 
+}
+
 
 div.two.columns {
 	margin-left: 0;  

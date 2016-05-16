@@ -54,11 +54,11 @@ export default React.createClass({
 						<div className="two columns">
 							<ul className='mapindex'>
 							  <li className='planet'><div className='sphere'></div>Planet</li>
-							  <li className='routes'>1 Perlemian Trade Route</li>
-							  <li className='routes'>2 Corellian Run</li>
-							  <li className='routes'>3 Corellian Trade Spine</li>
-							  <li className='routes'>4 Rima Trade Spine</li>
-							  <li className='routes'>5 Hydian Way</li>
+							  <li className='routes'>Perlemian Trade Route</li>
+							  <li className='routes'>Corellian Run</li>
+							  <li className='routes'>Corellian Trade Spine</li>
+							  <li className='routes'>Rima Trade Spine</li>
+							  <li className='routes'>Hydian Way</li>
 							</ul>
 						</div> 
 					</div>
