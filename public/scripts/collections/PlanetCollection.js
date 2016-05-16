@@ -6,7 +6,7 @@ import PlanetModel from './../models/PlanetModel.js';
 
 const PlanetCollection = Backbone.Collection.extend({
 	model: PlanetModel,
-	url: 'http://swapi.co/api/planets/',
+	url: '//swapi.co/api/planets/',
 
 	//we are redefining fetch here as the data needed is in the results 
 	fetch: function() {
