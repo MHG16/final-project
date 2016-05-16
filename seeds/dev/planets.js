@@ -7,10 +7,10 @@ exports.seed = function(knex, Promise) {
           top: 73, left: 73, createdAt: new Date()}),
 
         knex('planets').insert({id: 2, planetName: 'Alderaan', image: '/images/Planet_Images/Alderaan.jpg',
-          top: 20, left: 20, createdAt: new Date()}),
+          top: 36, left: 40, createdAt: new Date()}),
         
         knex('planets').insert({id: 3, planetName: 'Yavin', image: '/images/Planet_Images/Yavin.png',
-          top: 20, left: 20, createdAt: new Date()}),
+          top: 16, left: 58, createdAt: new Date()}),
         
         knex('planets').insert({id: 4, planetName: 'Hoth', image: '/images/Planet_Images/Hoth.jpg',
           top: 83, left: 28, createdAt: new Date()}),
@@ -31,7 +31,7 @@ exports.seed = function(knex, Promise) {
           top: 35, left:34, createdAt: new Date()}),
         
         knex('planets').insert({id: 61, planetName: 'Jakku', image: '/images/Planet_Images/Jakku.jpg',
-          top: 20, left:20, createdAt: new Date() })
+          top: 48, left:17, createdAt: new Date() })
   	);
   });
 };
