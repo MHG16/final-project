@@ -14,7 +14,7 @@ export default React.createClass({
 		console.log('I mounted Planet!');
 		this.state.planetcollection.on('change update', () => {
 			this.setState({planetcollection: planetcollection});
-			console.log('testing', planetcollection);
+			console.log('change update');
 		});
 		$.ajax('/api/v1/planet', {success: (planets) => {
 			planetcollection.set(planets);

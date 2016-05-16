@@ -25,7 +25,12 @@ const PlanetCollection = Backbone.Collection.extend({
 		this.reset([]);
 		this.add(models);
 
-		models.forEach(model => model.fetch());
+		models.forEach(model => model.fetch({
+			success: () => {
+				console.log('success', this);
+				this.trigger('update');
+			}
+		}));
 
 
 	}
