@@ -1,6 +1,4 @@
 import Backbone from 'backbone';
-import $ from 'jquery';
-
 
 import PlanetModel from './../models/PlanetModel.js';
 
@@ -15,7 +13,11 @@ const PlanetCollection = Backbone.Collection.extend({
 
 		let models = ids.map(id => {
 			let model = new PlanetModel({id: id});
-			model.fetch();
+			model.fetch({
+				success: () => {
+					console.log('fetch success');
+				}
+			});
 			return model;
 		});
 
