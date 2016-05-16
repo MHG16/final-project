@@ -17,7 +17,7 @@ export default React.createClass({
 	render: function() {
 		return (
 			<div className='row'>
-				<div className='offset-by-two eight columns'>
+				<div className='offset-by-one ten columns'>
 					<form class='postform' onSubmit={this.savePost}>
 						<textarea className='postentry' 
 								placeholder="Please describe your visit to this planet." 
