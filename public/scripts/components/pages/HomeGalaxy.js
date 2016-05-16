@@ -39,8 +39,8 @@ export default React.createClass({
 			return(
 				<section className='galaxy'>
 					<div className="row">
-						<div className="ten columns">
-							 <img src='../images/sw_galaxy.png' width='85%' height='auto'/>
+						<div className="ten columns galaxycontainer">
+							 <img src='../images/sw_galaxy.png' width='100%' height='auto'/>
 							 <p className='core'>Deep Core</p>
 							 <p className='hutt'>Hutt Space</p>
 							 <p className='colonies'>Colonies</p>
