@@ -33,6 +33,19 @@
 	margin-top: .2em;
 }
 
+.num {
+	color: $sw-black;
+	font-size: 1.2em;  
+	font-weight: bold;  
+	width: 25px;
+	height: 25px;
+	border-radius: 25px;
+	display:inline;
+	text-align:center; 
+	background-color: $sw-lightblue; 
+}
+
+
 div.sphere {
 	margin-right: .4em; 
 }
@@ -124,7 +137,7 @@ div.two.columns {
 
 
 .routes {
-	color: $sw-lightgray;
+	color: $sw-lightblue;
 	font-size: 1.25em;
 	font-family: 'Helvetica neue', sans-serif;
 	list-style-type: none;
