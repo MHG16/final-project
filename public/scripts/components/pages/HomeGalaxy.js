@@ -1,7 +1,7 @@
 import React from 'react';
 import planetcollection from '../../collections/PlanetCollection.js';
 import Planet from '../../components/Planet.js';
-import $ from 'jquery';
+
 
 export default React.createClass({
 	
@@ -11,17 +11,17 @@ export default React.createClass({
 	},
 	
 	componentDidMount: function(){
-		console.log('I mounted Planet!');
-		this.state.planetcollection.on('change update', () => {
+		// console.log('I mounted Planet!');
+		this.state.planetcollection.on('update', () => {
 			this.setState({planetcollection: planetcollection});
+			console.log('update');
+			// let unfetchedPlanets = planetcollection.filter(planet => !planet.get('name'));
+			// console.log(unfetchedPlanets.length);
+			// if(unfetchedPlanets.length === 0) {
+			
+			// }
 		});
-		// $.ajax('/api/v1/planet', {success: (planets) => {
-		// 	planetcollection.set(planets);
-		// }} );
-		this.state.planetcollection.fetch({success: (data) => {
-			console.log('got success from collection fetch', planetcollection);
-			this.setState({planetcollection: planetcollection});
-		}});
+		this.state.planetcollection.fetch();
 	
 	},
 

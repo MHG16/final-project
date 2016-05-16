@@ -1,5 +1,5 @@
 import Backbone from 'backbone';
-
+import $ from 'jquery';
 import PlanetModel from './../models/PlanetModel.js';
 
 const PlanetCollection = Backbone.Collection.extend({
@@ -7,28 +7,25 @@ const PlanetCollection = Backbone.Collection.extend({
 	url: '//swapi.co/api/planets/',
 
 	//we are redefining fetch here as the data needed is in the results 
-	fetch: function(options) {
+	fetch: function(options={}) {
 
 		const ids = [1, 2, 3, 4, 5, 6, 7, 8, 9, 61];
 
 		let models = ids.map(id => {
 			return new PlanetModel({id: id});
-			// model.fetch({
-			// 	success: () => {
-			// 		this.trigger('update');
-			// 		console.log('fetch success');
-			// 	}
-			// });
-			// return model;
 		});
 
-		this.reset([]);
-		this.add(models);
+		let loadedModels = 0;
 
 		models.forEach(model => model.fetch({
-			success: (data) => {
-				if(options.success) {
-					options.success(data);
+			complete: (data) => {
+				loadedModels++;
+				if(loadedModels == models.length) {
+					$.ajax('/api/v1/planet', {success: (planets) => {
+						this.reset(models);
+						this.set(planets);
+						this.trigger('update');
+					}} );
 				}
 			}
 		}));
