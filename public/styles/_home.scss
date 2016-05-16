@@ -16,7 +16,9 @@
 .planet {
 	color: $sw-tan;  
 	font-size: 1.25em;  
-	list-style-type: none;  	
+	list-style-type: none; 
+	display:inline;
+	float:left; 	
 
 }
 
@@ -24,6 +26,8 @@
 	width: 25px;
 	height: 25px;
 	border-radius: 25px;
+	display:inline;
+	float:left; 
 	background-color: $sw-tan; 
 }
 
