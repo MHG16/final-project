@@ -1,7 +1,7 @@
 @import 'variables';
 
 .rebel {
-	background-color: $sw-blue;
+	//background-color: $sw-blue;
 	border-radius: 2.5em;  
 	width: 100%;
 	height: auto;  
@@ -15,9 +15,28 @@
 	height: auto;  
 }
 
+.bluetransition {
+	width: 4em;
+	height: 4em;
+	border-radius: 3em; 
+	background-color: $sw-black;
+
+}
+
+.bluetransition {
+	animation: bluetransition-color 4s linear 0s infinite alternate;
+}
 
 
-
+@keyframes bluetransition-color {
+  from {
+    background-color: $sw-blue;
+  }
+  to {
+    background-color: $sw-black;
+  }
+  
+}
 
 
 

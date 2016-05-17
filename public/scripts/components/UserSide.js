@@ -14,7 +14,9 @@ export default React.createClass({
 		return (
 					<div className='row'>
 							<div className='offset-by-ten one columns'>
-								<img className='rebel' src ='../../images/Logos/rebel.png' width='100%' height='auto'/>
+								<div className='bluetransition'>
+									<img className='rebel' src ='../../images/Logos/rebel.png' width='100%' height='auto'/>
+								</div>
 							</div>
 					</div>
 			);
