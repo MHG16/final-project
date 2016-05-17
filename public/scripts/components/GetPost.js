@@ -8,7 +8,7 @@ export default React.createClass({
 	},
 
 	componentDidMount: function() {
-		console.log('componentDidMount');
+		//console.log('componentDidMount');
 		this.state.postcollection.on('change update', () => {
 			this.setState({postcollection: this.state.postcollection});
 
@@ -33,7 +33,7 @@ export default React.createClass({
 	},
 
 	render: function() {
-		console.log(this.state.postcollection);
+		//console.log(this.state.postcollection);
 
 		//want the latest entry to display first below the form
 		//entries should display with newest first so we use reverse()

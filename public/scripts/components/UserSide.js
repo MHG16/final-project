@@ -7,7 +7,7 @@ import user from '../models/User.js';
 export default React.createClass({
 	
 	render: function () {
-		console.log(user.rebel);
+		//console.log(user.rebel);
 		if (user.rebel === 'true') {
 
 		return (
