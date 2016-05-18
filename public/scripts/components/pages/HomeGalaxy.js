@@ -9,10 +9,8 @@ export default React.createClass({
 		//console.log('getInitialState');
 		return{planetcollection: planetcollection};
 	},
-	
-	componentDidMount: function(){
-		// console.log('I mounted Planet!');
-		this.state.planetcollection.on('update', () => {
+
+	updatePlanets: function () {
 			this.setState({planetcollection: planetcollection});
 			//console.log('update');
 			// let unfetchedPlanets = planetcollection.filter(planet => !planet.get('name'));
@@ -20,10 +18,20 @@ export default React.createClass({
 			// if(unfetchedPlanets.length === 0) {
 			
 			// }
-		});
+		},
+	
+	componentDidMount: function(){
+		// console.log('I mounted Planet!');
+		this.state.planetcollection.on('update', this.updatePlanets);
+		
 		this.state.planetcollection.fetch();
 	
 	},
+
+	componentWillUnmount: function () {
+		this.state.planetcollection.off('update', this.updatePlanets);
+	},
+
 
 	render: function(){
 			let planets = this.state.planetcollection.map(
