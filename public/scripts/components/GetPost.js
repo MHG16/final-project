@@ -13,13 +13,13 @@ export default React.createClass({
 			this.setState({postcollection: this.state.postcollection});
 
 		});
-		console.log('test', {
-			data: {
-				where: {
-					planetId: this.props.planetId
-				}
-			}
-		});
+		// console.log('test', {
+		// 	data: {
+		// 		where: {
+		// 			planetId: this.props.planetId
+		// 		}
+		// 	}
+		//});
 
 		//need to use where: {planetId: this.props.planetId} here so that each planet page only
 		//displays the blog entries on that page.  

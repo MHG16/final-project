@@ -7,8 +7,8 @@ import user from '../models/User.js';
 export default React.createClass({
 	
 	render: function () {
-		console.log('rebel:',user.rebel);
-		console.log('id:',user.id);
+		//console.log('rebel:',user.rebel);
+		//console.log('id:',user.id);
 		if (user.get('rebel')) {
 
 		return (

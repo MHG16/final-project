@@ -5,7 +5,7 @@ import user from '../models/user';
 
 export default React.createClass({
 	getInitialState: function() {
-		console.log('getInitialState');
+		//console.log('getInitialState');
 		return {
 			errors: {},
 			user: user

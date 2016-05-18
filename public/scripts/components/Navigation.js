@@ -17,7 +17,7 @@ export default React.createClass({
 	componentWillMount: function() {
 		//console.log('in componentWillMount id is:', user.id);
 		user.on('change', () => {
-			console.log('user changed, nav', this.state.user.toJSON());
+			//console.log('user changed, nav', this.state.user.toJSON());
 			this.setState({
 				user: user
 			});

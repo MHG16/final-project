@@ -40,7 +40,7 @@ export default React.createClass({
 
 		success: (loggedArg) => {
 			user.set(loggedArg);
-			console.log('successful login request', user.toJSON(), user.cid);
+			//console.log('successful login request', user.toJSON(), user.cid);
 
 			//now need to close the modal
 			// console.log(this.props.closeModal);
