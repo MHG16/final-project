@@ -26,7 +26,7 @@ export default React.createClass({
 								rows="15"></textarea>
 						<div className='row'>		
 							<div className='offset-by-ten one columns'>
-								<button type='submit'>Save</button>
+								<button className='save' type='submit'>Save</button>
 							</div>
 						</div>
 					</form>
@@ -50,13 +50,13 @@ export default React.createClass({
 	},
 
 	success: (loggedArg) => {
-		console.log('I was successful in posting!');
+		//console.log('I was successful in posting!');
 		this.state.postcollection.set(loggedArg);
 
 		
 	},
 	error: (errorArg) => {
-			console.log('There was an error in posting');
+			//console.log('There was an error in posting');
 			this.setState({errors: errorArg.responseJSON});
 		}
 		

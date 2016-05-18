@@ -28,7 +28,7 @@ export default React.createClass({
 		);
 	},
 	login: function(e) {
-		console.log('login', this.props);
+		//console.log('login', this.props);
 	e.preventDefault();
 	$.ajax({
 		url: '/auth/login',

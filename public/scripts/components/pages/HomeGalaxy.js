@@ -6,24 +6,32 @@ import Planet from '../../components/Planet.js';
 export default React.createClass({
 	
 	getInitialState: function(){
-		console.log('getInitialState');
+		//console.log('getInitialState');
 		return{planetcollection: planetcollection};
 	},
-	
-	componentDidMount: function(){
-		// console.log('I mounted Planet!');
-		this.state.planetcollection.on('update', () => {
+
+	updatePlanets: function () {
 			this.setState({planetcollection: planetcollection});
-			console.log('update');
+			//console.log('update');
 			// let unfetchedPlanets = planetcollection.filter(planet => !planet.get('name'));
 			// console.log(unfetchedPlanets.length);
 			// if(unfetchedPlanets.length === 0) {
 			
 			// }
-		});
+		},
+	
+	componentDidMount: function(){
+		// console.log('I mounted Planet!');
+		this.state.planetcollection.on('update', this.updatePlanets);
+		
 		this.state.planetcollection.fetch();
 	
 	},
+
+	componentWillUnmount: function () {
+		this.state.planetcollection.off('update', this.updatePlanets);
+	},
+
 
 	render: function(){
 			let planets = this.state.planetcollection.map(

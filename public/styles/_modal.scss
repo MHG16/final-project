@@ -10,6 +10,14 @@
 		max-width: 15em;
 	}
 
+
+	h1 {
+		color: $sw-white;  
+	}
+
+	h4 {
+		color: $sw-white;  	
+	}
 	section.page-login.container {
 		margin: 0;  
 		padding-bottom: 0;
@@ -56,11 +64,13 @@
 
 	button.button-primary {
 		background-color: $sw-mediumblue;  
+		
 
 	}
 
 	button {
 		background-color: $sw-mediumblue;
+		color: $sw-white;   
 	}
 
 	.close{

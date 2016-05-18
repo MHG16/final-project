@@ -14,7 +14,7 @@ export default React.createClass({
 	
 
 	render: function() {
-		console.log('render');
+		//console.log('render');
 		return (
 			<section>
 				<h1>Register</h1>
@@ -54,10 +54,10 @@ export default React.createClass({
 		);
 	},
 	register: function(e) {
-		console.log('register');
+		//console.log('register');
 		e.preventDefault();
 		var whichSide = this.refs.whichSide.querySelector('input:checked').value;
-		console.log(whichSide);
+		//console.log(whichSide);
 		if (whichSide === 'true') {
 			whichSide = true;
 		} else {
@@ -80,18 +80,18 @@ export default React.createClass({
 				Accept: 'application/json'
 			},
 			success: (registeredUser) => {
-				console.log('success');
-				console.log(registeredUser);
+				//console.log('success');
+				//console.log(registeredUser);
 				this.state.user.set(registeredUser);
-				console.log(this.state.user);
+				//console.log(this.state.user);
 				//now need to close the modal
 				this.props.closeModal();
 				//direct to the home page
 				browserHistory.push('/');
 			},
 			error: (errorArg) => {
-				console.log('error');
-				console.log(errorArg);
+				//console.log('error');
+				//console.log(errorArg);
 				this.setState({errors: errorArg.responseJSON});
 			}
 		});

@@ -10,8 +10,8 @@ import UserSide from './UserSide.js';
 export default React.createClass({
 	
 	render: function () {
-		console.log('id:', user.id);
-		console.log('rebel:', user.rebel);
+		//console.log('id:', user.id);
+		//console.log('rebel:', user.rebel);
 		if (user.id) {
 
 		return (

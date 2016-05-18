@@ -7,13 +7,16 @@ import user from '../models/User.js';
 export default React.createClass({
 	
 	render: function () {
-		console.log(user.rebel);
-		if (user.rebel === 'true') {
+		console.log('rebel:',user.rebel);
+		console.log('id:',user.id);
+		if (user.get('rebel')) {
 
 		return (
 					<div className='row'>
 							<div className='offset-by-ten one columns'>
-								<img className='rebel' src ='../../images/Logos/rebel.png' width='100%' height='auto'/>
+								<div className='bluetransition'>
+									<img className='rebel' src ='../../images/Logos/rebel.png' width='100%' height='auto'/>
+								</div>
 							</div>
 					</div>
 			);
@@ -22,7 +25,9 @@ export default React.createClass({
 			return (
 					<div className='row'>
 						<div className='offset-by-ten one columns'>
-							<img className='empire' src ='../../images/Logos/empire.png' width='100%' height='auto'/>
+							<div className='redtransition'>
+								<img className='empire' src ='../../images/Logos/empire.png' width='100%' height='auto'/>
+							</div>
 						</div>
 					</div>  
 		
