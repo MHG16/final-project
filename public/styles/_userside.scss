@@ -9,7 +9,7 @@
 
 
 .empire {
-	background-color: $sw-red;
+	//background-color: $sw-red;
 	border-radius: 2.5em;  
 	width: 100%;
 	height: auto;  
@@ -38,6 +38,28 @@
   
 }
 
+.redtransition {
+	width: 4em;
+	height: 4em;
+	border-radius: 3em; 
+	background-color: $sw-black;
+
+}
+
+.redtransition {
+	animation: redtransition-color 4s linear 0s infinite alternate;
+}
+
+
+@keyframes redtransition-color {
+  from {
+    background-color: $sw-red;
+  }
+  to {
+    background-color: $sw-black;
+  }
+  
+}
 
 
 
