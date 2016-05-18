@@ -26,7 +26,7 @@ export default React.createClass({
 								rows="15"></textarea>
 						<div className='row'>		
 							<div className='offset-by-ten one columns'>
-								<button type='submit'>Save</button>
+								<button className='save' type='submit'>Save</button>
 							</div>
 						</div>
 					</form>

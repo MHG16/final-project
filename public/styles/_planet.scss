@@ -42,12 +42,13 @@ form {
 	color: $sw-white;  
 }
 
-button {
+.save {
 	background-color: $sw-mediumblue;  
+	color: $sw-white;  
 }
 
 
-button:hover {
+.save:hover {
 	background-color: $sw-lightblue;  
 }
 
