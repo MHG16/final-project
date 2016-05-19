@@ -50,7 +50,7 @@ export default React.createClass({
 			return (<nav>
 			<LoginRegisterModal modalVisible={this.state.modalVisible} closeModal={this.closeModal}/>
 			<a href="#" className="nav-link" onClick={this.openModal}>Login/Register</a>
-			<a href="#" className="nav-link">Home</a>
+			<Link to="/" className="nav-link">Home</Link>
 			</nav>);
 		} else {
 			//console.log('User is logged in, should be able to create blog posts, should see sign out and home');
