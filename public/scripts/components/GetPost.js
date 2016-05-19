@@ -7,19 +7,24 @@ export default React.createClass({
 		return {postcollection: PostCollection};
 	},
 
+	updatePosts: function () {
+			this.setState({postcollection: PostCollection});
+			//console.log('update');
+			// let unfetchedPlanets = planetcollection.filter(planet => !planet.get('name'));
+			// console.log(unfetchedPlanets.length);
+			// if(unfetchedPlanets.length === 0) {
+			
+			// }
+		},
+
+
 	componentDidMount: function() {
 		//console.log('componentDidMount');
-		this.state.postcollection.on('change update', () => {
-			this.setState({postcollection: this.state.postcollection});
+		this.state.postcollection.on('change update', this.updatePosts); 
+			//this.setState({postcollection: this.state.postcollection});
 
-		});
-		// console.log('test', {
-		// 	data: {
-		// 		where: {
-		// 			planetId: this.props.planetId
-		// 		}
-		// 	}
-		//});
+		
+		
 
 		//need to use where: {planetId: this.props.planetId} here so that each planet page only
 		//displays the blog entries on that page.  
@@ -32,6 +37,12 @@ export default React.createClass({
 		});	
 	},
 
+	componentWillUnmount: function () {
+		this.state.postcollection.off('change update', this.updatePosts);
+	},
+
+
+
 	render: function() {
 		//console.log(this.state.postcollection);
 
@@ -42,7 +53,7 @@ export default React.createClass({
 		let listOfPosts = reversedArray.map((value, i, arr) => {
 			return (
 					<IndivPost
-					key = {value.get('id')}
+					key = {i}
 					id = {value.get('id')}
 					body = {value.get('body')} />
 				);

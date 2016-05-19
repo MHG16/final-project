@@ -7,11 +7,26 @@ export default React.createClass({
 		return {postcollection: PostCollection};
 	},
 
+	updatePosts: function () {
+			this.setState({postcollection: postcollection});
+			//console.log('update');
+			// let unfetchedPlanets = planetcollection.filter(planet => !planet.get('name'));
+			// console.log(unfetchedPlanets.length);
+			// if(unfetchedPlanets.length === 0) {
+			
+			// }
+		},
+
 	componentDidMount: function() {
-		this.state.postcollection.on('change update', () => {
+		this.state.postcollection.on('change update', this.updatePlanets);
 			this.setState({postcollection: PostCollection});
 
-		});
+		
+	},
+
+
+	componentWillUnmount: function () {
+		this.state.postcollection.off('change update', this.updatePosts);
 	},
 
 	render: function() {
