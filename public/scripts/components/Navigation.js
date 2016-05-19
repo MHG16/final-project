@@ -14,14 +14,28 @@ export default React.createClass({
 			
 	},
 
+	updateUser: function () {
+			this.setState({user: user});
+			//console.log('update');
+			// let unfetchedPlanets = planetcollection.filter(planet => !planet.get('name'));
+			// console.log(unfetchedPlanets.length);
+			// if(unfetchedPlanets.length === 0) {
+			
+			// }
+		},
+
 	componentWillMount: function() {
 		//console.log('in componentWillMount id is:', user.id);
-		user.on('change', () => {
+		user.on('change', this.updateUser);
 			//console.log('user changed, nav', this.state.user.toJSON());
 			this.setState({
 				user: user
 			});
-		});
+		
+	},
+
+	componentWillUnmount: function () {
+		this.state.user.off('change', this.updateUser);
 	},
 
 	openModal: function(e) {
