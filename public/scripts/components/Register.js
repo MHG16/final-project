@@ -22,8 +22,8 @@ export default React.createClass({
 					<input type="text" placeholder="First Name" ref="firstName"/>
 					<input type="text" placeholder="Last Name" ref="lastName"/>
 					<input type="text" placeholder="Email" ref="email"/>
-					<div className="error">{this.state.errors.email ? this.state.errors.email.message : null}</div>
 					<input type="password" placeholder="Password" ref="password" />
+					<div className="error">{this.state.errors.email ? this.state.errors.email.message : null}</div>
 					<div ref='whichSide'>
 						<h4 className='choose'>Which side are you on?</h4>
 						<label>
